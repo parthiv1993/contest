@@ -1,19 +1,13 @@
 var jwt = require('jsonwebtoken');
 var allPlayerJson = require('./Allplayer');
 var initialPoints = require('./points');
+var credentials = require('./credentials');
 
-const userNames = {
-    master : 'Parthiv',
-    nikbaf : 'Nikhil',
-    charsula : 'Shashank',
-    ravvi : 'Ravi',
-    stockabove : 'Vohera',
-    chutiya : 'Prakash',
-}
+const userNames = credentials;
 
 const privilege = {
     'Parthiv' : 4,
-    'Nikhil' : 3,
+    'Nikhil' : 3, 
     'Shashank' : 2,
     'Ravi' : 2,
     'Vohera' : 2,
@@ -45,7 +39,7 @@ function CreatePlayer(playerId,name , bids , soldAt , soldTo , team , grade ) {
     this.grade = grade;
 }
 
-function createJwt(nickName) {
+function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
     if(userNames[lowerNickName]){
         var token = jwt.sign({ user: userNames[lowerNickName]||'readOnly' },PRIVATE_KEY)

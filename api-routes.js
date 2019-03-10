@@ -11,7 +11,9 @@ router.get('/', function (req, res) {
 
 // This responds a POST request for the homepage
 router.post('/login', function (req, res) {
-    console.log(req.body.nickName)
+    console.log(req);
+    console.log(req.body);
+    console.log(req.body.nickName);
     const token = createJwt(req.body.nickName);
     res.send({token});
 })

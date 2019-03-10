@@ -5,12 +5,12 @@ import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
 import { Table ,Card, Button} from 'react-bootstrap';
 import ReactDataGrid from 'react-data-grid';
-// import { Toolbar, Data } from "react-data-grid-addons";
+import { Toolbar, Data } from "react-data-grid-addons";
 import './Grid.css';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 
-// const selectors = Data.Selectors;
+const selectors = Data.Selectors;
 const sortRows = (initialRows, sortColumn, sortDirection) => rows => {
     const comparer = (a, b) => {
         if (sortDirection === "ASC") {
@@ -42,8 +42,7 @@ const columns = [
 ]
 
 function getRows(rows, filters) {
-    return rows;
-    // return selectors.getRows({ rows, filters });
+    return selectors.getRows({ rows, filters });
 }
 
 function Grid({ players }) {
@@ -56,7 +55,7 @@ function Grid({ players }) {
             rowGetter={i => filteredRows[i]}
             rowsCount={filteredRows.length}
             minHeight={500}
-            // toolbar={<Toolbar enableFilter={true} />}
+            toolbar={<Toolbar enableFilter={true} />}
             onGridSort={(sortColumn, sortDirection) => setRows(sortRows(players, sortColumn, sortDirection))}
             onAddFilter={filter => setFilters(handleFilterChange(filter))}
             onClearFilters={() => setFilters({})}
