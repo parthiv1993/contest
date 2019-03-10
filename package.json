@@ -21,7 +21,7 @@
     "socket.io": "^2.2.0"
   },
   "scripts": {
-    "start": "npm install && npm run build && node server.js",
+    "start": "node server.js",
     "devstart": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
