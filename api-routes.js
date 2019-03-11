@@ -1,7 +1,7 @@
 let router = require('express').Router();
 const {checkIfCanBid,checkRoleRequired,createJwt,
         getLivePlayer,markAsSold,getRemainingPoints,getMyTeam,
-        bringNextPlayer,resetAuction,getAllPlayers}  =require('./constants/CadnU');
+        bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount}  =require('./constants/CadnU');
 
 router.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
@@ -91,5 +91,13 @@ router.get('/allPlayers',function(req,res){
     res.send(false);
 })
 
+router.get('/getRemainingPlayersCount',function(req,res){
+    const auth = checkRoleRequired(req,1)
+    if(auth ==true){ 
+        res.send(getRemainingPlayersCount());
+        return;  
+    }
+    res.send(false);
+})
 
 module.exports=router;

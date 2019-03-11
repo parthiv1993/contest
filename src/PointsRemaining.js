@@ -10,14 +10,17 @@ class PointsRemaining extends React.Component{
     constructor(props){
         super(props);
         this.state ={
-            points : null
+            points : null,
+            count:null
         }
     }
 
     componentDidMount(){
         this.remainingPointsRequest();
+        this.remainingPlayerRequest();
         this.interval = setInterval(()=>{
             this.remainingPointsRequest();
+            this.remainingPlayerRequest();
         },Constants.POINTS_POLL_TIME)
     
     }
@@ -38,14 +41,26 @@ class PointsRemaining extends React.Component{
         )
     }
 
- 
+    remainingPlayerRequest(){
+        Axios.get(Constants.BASE_URL + '/getRemainingPlayersCount',getHeaderObject()).then(
+            (res)=>{
+                if(!_.isEqual(res.data,this.state.points)){
+                    this.setState({count:res.data})
+                }
+            },(err)=>{
+                console.error(err);
+            }
+        )
+    }
 
 
     render(){
         const points =this.state.points;
+        const count = this.state.count;
         const user = localStorage.getItem('user');
-        if(points){
+        if(points && count){
             return(
+                <div>
                 <Card>
                     <Card.Header as="h5">
                         Points Remaining
@@ -76,6 +91,38 @@ class PointsRemaining extends React.Component{
                             </Table>
                     </Card.Body>
                 </Card>
+                <br/>
+                <Card>
+                    <Card.Header as="h5">
+                        Players Remaining
+                    </Card.Header>
+                    <Card.Body>
+                        <Table striped={true} bordered={true} hover={true} >
+                                <thead>
+                                    <tr>
+                                        <th>
+                                            Grade
+                                        </th>
+                                        <th>
+                                            Number of Players
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {Object.keys(count).map((key,index)=>
+                                        <tr key={index }>
+                                            <td >
+                                                {key}
+                                            </td>
+                                            <td>
+                                                {count[key]}
+                                            </td>
+                                        </tr>)}
+                                </tbody>
+                            </Table>
+                    </Card.Body>
+                </Card>
+                </div>
             )
         }
         return null;

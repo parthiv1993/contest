@@ -1,8 +1,10 @@
 module.exports= {
-    master : 'Parthiv',
-    nikbaf : 'Nikhil',
+    controller : 'Parthiv',
+    pokemon : 'Nikhil',
     charsula : 'Shashank',
     ravvi : 'Ravi',
-    aboveAbhi : 'Vohera',
+    aboveabhi : 'Vohera',
     chutiya : 'Prakash',
+    'mantrix@511': 'Mantrix',
+    readonly : 'readOnly'
 };

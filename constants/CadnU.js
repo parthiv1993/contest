@@ -2,31 +2,28 @@ var jwt = require('jsonwebtoken');
 var allPlayerJson = require('./Allplayer');
 var initialPoints = require('./points');
 var credentials = require('./credentials');
+var Importprivilege =require('./Privileges')
 
 const userNames = credentials;
 
-const privilege = {
-    'Parthiv' : 4,
-    'Nikhil' : 3, 
-    'Shashank' : 2,
-    'Ravi' : 2,
-    'Vohera' : 2,
-    'Vishal': 2,
-    'Prakash':2,
-    'readOnly' : 1
-}
+const privilege = Importprivilege;
 
 var points=Object.assign({},initialPoints);
 
 const PRIVATE_KEY = 'PRIVATE';
 
-var remainingPlayer  = allPlayerJson;
+// var remainingPlayer  = allPlayerJson;
+
+var AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A')
+var BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B')
+var CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C')
+var DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D')
 
 var unsoldPlayer=[]
 
 var soldPlayer = []
 
-var livePlayer = new CreatePlayer(5,'virat',[{bidAmt:10,bidBy:'Parthiv'}],null,null,'rcb','A')
+var livePlayer = {}
 
 
 function CreatePlayer(playerId,name , bids , soldAt , soldTo , team , grade ) {
@@ -138,33 +135,75 @@ function getMyTeam(request){
 
 function bringNextPlayer() {
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
-        const len = remainingPlayer.length;
-
-        const ind = Math.floor(Math.random()*len);
-        livePlayer = remainingPlayer.splice(ind,1)[0];
+        livePlayer = getNextPlayer();
         return true;
     }
     return false;
 }
 
+function getNextPlayer() {
+    var len =null;
+    if(AGradePlayers.length>0){
+        len = AGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return AGradePlayers.splice(ind,1)[0];
+    }
+    if(BGradePlayers.length>0){
+        len = BGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return BGradePlayers.splice(ind,1)[0];
+    }
+    if(CGradePlayers.length>0){
+        len = CGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return CGradePlayers.splice(ind,1)[0];
+    }
+    if(DGradePlayers.length>0){
+        len = DGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return DGradePlayers.splice(ind,1)[0];
+    }
+    if(unsoldPlayer.length>0){
+        len = unsoldPlayer.length;
+        const ind = Math.floor(Math.random()*len);
+        return unsoldPlayer.splice(ind,1)[0];
+    }
+}
+
 
 function resetAuction(){
-    remainingPlayer = allPlayerJson;
+    AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A')
+    BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B')
+    CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C')
+    DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D')
     points = initialPoints;
     soldPlayer = [];
     unsoldPlayer = [];
-    const len = remainingPlayer.length;
-    const ind = Math.floor(Math.random()*len);
-    livePlayer = remainingPlayer.splice(ind,1)[0];
+    livePlayer = getNextPlayer()
 }
 
 function getAllPlayers(){
     let players =[];
-    players = players.concat(remainingPlayer);
+    players = players.concat(AGradePlayers);
+    players = players.concat(BGradePlayers);
+    players = players.concat(CGradePlayers);
+    players = players.concat(DGradePlayers);
     players = players.concat(soldPlayer);
     players = players.concat(unsoldPlayer);
     players.unshift(livePlayer);
     return players;
+}
+
+function getRemainingPlayersCount() {
+    var A = AGradePlayers.length;
+    var B = BGradePlayers.length;
+    var C = CGradePlayers.length;
+    var D = DGradePlayers.length;
+    var Unsold = unsoldPlayer.length;
+    var Total = A+B+C+D+Unsold;
+    return {
+        A,B,C,D, Unsold,Total
+    }
 }
 
 module.exports = {
@@ -179,5 +218,6 @@ module.exports = {
     getMyTeam,
     bringNextPlayer,
     resetAuction,
-    getAllPlayers
+    getAllPlayers,
+    getRemainingPlayersCount
 }
