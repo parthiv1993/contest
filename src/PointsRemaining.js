@@ -4,6 +4,7 @@ import Axios from'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
 import { Table, Card ,Button} from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 
 class PointsRemaining extends React.Component{
@@ -33,7 +34,10 @@ class PointsRemaining extends React.Component{
                     this.setState({points:res.data})
                 }
             },(err)=>{
-                console.error(err);
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
+                console.error(err); 
             }
         )
     }

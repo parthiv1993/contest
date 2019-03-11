@@ -4,6 +4,8 @@ import Login from './Login';
 import HomePage from './HomePage';
 import axios from 'axios';
 import constants from './Constants';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class App extends Component {
 
@@ -12,14 +14,17 @@ class App extends Component {
       saveJwt(res.data.token)
       this.forceUpdate();
     },(err)=>{
-      console.log(err);
+        if(err && err.response && err.response.data && err.response.data.message){
+          toast.error(err.response.data.message);
+        }
+      console.log(err.response);
     })
   }
 
   render() {
     const isAuthorized = checkForJwt();
     return (
-      <div>{isAuthorized?<HomePage/>:<Login onLogin={this.login.bind(this)}/>}</div>
+      <div>{isAuthorized?<HomePage/>:<Login onLogin={this.login.bind(this)}/>}<ToastContainer /></div>
     );
   }
 }

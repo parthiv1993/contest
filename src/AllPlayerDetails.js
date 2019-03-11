@@ -9,10 +9,11 @@ import ReactDataGrid from 'react-data-grid';
 import './Grid.css';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
+import { toast } from 'react-toastify';
 
 // const selectors = Data.Selectors;
 const sortRows = (initialRows, sortColumn, sortDirection) => rows => {
-    const comparer = (a, b) => {
+    const comparer = (a, b) => { 
         if (sortDirection === "ASC") {
             return a[sortColumn] > b[sortColumn] ? 1 : -1;
         } else if (sortDirection === "DESC") {
@@ -83,6 +84,9 @@ class AllPlayerDetails extends React.Component{
             (res)=>{
                 this.setState({players:res.data})
             },(err)=>{
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
                 console.error(err);
             }
         )

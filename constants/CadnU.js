@@ -23,7 +23,7 @@ var unsoldPlayer=[]
 
 var soldPlayer = []
 
-var livePlayer = {}
+var livePlayer = getNextPlayer()
 
 
 function CreatePlayer(playerId,name , bids , soldAt , soldTo , team , grade ) {
@@ -42,6 +42,7 @@ function createJwt(nickName = '') {
         var token = jwt.sign({ user: userNames[lowerNickName]||'readOnly' },PRIVATE_KEY)
         return token;
     }
+    return false;
 }
 
 function checkRoleRequired(request,requiredRole) {
@@ -67,29 +68,36 @@ function getLivePlayer(){
 }
 
 
-function checkIfCanBid({bidAmt,bidBy,playerId}){
+function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
+    var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
         
         if(livePlayer.bids.length==0 || livePlayer.bids[0].bidAmt<bidAmt) {
             
             if(points[bidBy]>=bidAmt){
                 
-                return addBid({bidAmt,bidBy,playerId});
+                if(getPlayersOfUser(bidBy).length<20){
+                    
+                    livePlayer.bids.unshift({
+                        bidBy:bidBy,
+                        bidAmt:bidAmt
+                    });
+                    return({
+                        success:true,
+                        body : 'Bid Placed Successfully'
+                    })
+                }
+                body = 'you can not have more than 20 players';
+                return {success:false,body}
             }
-            console.log('you dont have enough points');
+            body = 'you dont have enough points'
+            return {success:false,body}
         }
-        console.log('bid greater than previous bid');
+        body = 'bid not greater than previous bid'
+        return {success:false,body}
     }
-    console.log('player is not same or already sold');
-    return false;
-}
-
-function addBid(bid){
-    livePlayer.bids.unshift({
-        bidBy:bid.bidBy,
-        bidAmt:bid.bidAmt
-    });
-    return true;
+    body = 'player is not same or already sold'
+    return {success:false,body};
 }
 
 function markAsSold({playerId}){
@@ -101,18 +109,19 @@ function markAsSold({playerId}){
             livePlayer.soldTo = bidBy;
             soldPlayer.unshift(livePlayer);
             points[bidBy]=points[bidBy]-bidAmt;
+            const message = `Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`
             console.log(`Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`)
-            return true;
+            return {success:true,message};
         }
         else{
             livePlayer.soldTo = 'unSold';
             unsoldPlayer.push(livePlayer);
-            console.log(`Player with id ${playerId} remained unsold`)
-            return true;
+            const message = `Player with id ${playerId} remained unsold`;
+            console.log(message);
+            return {success:true,message};
         }
     }
-    console.log('player ID not matched');
-    return false;
+    return ({success:false,message:'player ID not matched'});
 }
 
 function getRemainingPoints(){
@@ -124,22 +133,26 @@ function getMyTeam(request){
         const token = request.headers['authorization'];
         const res = jwt.verify(token,PRIVATE_KEY);
         const user = res.user; 
-        return soldPlayer.filter(function(player){
-            return player.soldTo === user
-        });
+        return getPlayersOfUser(user)
     }
     catch(e){
         return e;
     }
 }
 
+function getPlayersOfUser(user){
+    return soldPlayer.filter(function(player){
+        return player.soldTo === user
+    });
+}
+
 function bringNextPlayer() {
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
         livePlayer = getNextPlayer();
-        console.log(livePlayer);
-        return true;
+        const message = `Player with id ${livePlayer.playerId} is next Player`;
+        return {success :true,message};
     }
-    return false;
+    return {success:false,message:'Please sell the existing player or mark it unsold'};
 }
 
 function getNextPlayer() {
@@ -149,27 +162,26 @@ function getNextPlayer() {
         const ind = Math.floor(Math.random()*len);
         return AGradePlayers.splice(ind,1)[0];
     }
-    // if(BGradePlayers.length>0){
-    //     len = BGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return BGradePlayers.splice(ind,1)[0];
-    // }
-    // if(CGradePlayers.length>0){
-    //     len = CGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return CGradePlayers.splice(ind,1)[0];
-    // }
-    // if(DGradePlayers.length>0){
-    //     len = DGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return DGradePlayers.splice(ind,1)[0];
-    // }
+    if(BGradePlayers.length>0){
+        len = BGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return BGradePlayers.splice(ind,1)[0];
+    }
+    if(CGradePlayers.length>0){
+        len = CGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return CGradePlayers.splice(ind,1)[0];
+    }
+    if(DGradePlayers.length>0){
+        len = DGradePlayers.length;
+        const ind = Math.floor(Math.random()*len);
+        return DGradePlayers.splice(ind,1)[0];
+    }
     if(unsoldPlayer.length>0){
         len = unsoldPlayer.length;
         const ind = Math.floor(Math.random()*len);
         const player = unsoldPlayer.splice(ind,1)[0];
         player.soldTo = null;
-        console.log(player);
         return player;
     }
 }
@@ -219,7 +231,7 @@ module.exports = {
     createJwt,
     checkRoleRequired,
     getLivePlayer,
-    checkIfCanBid,
+    checkIfCanBidAndAddBid,
     markAsSold,
     getRemainingPoints,
     getMyTeam,

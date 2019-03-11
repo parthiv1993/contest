@@ -4,6 +4,7 @@ import Axios from'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
 import { Table ,Card,Button} from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 
 class YourTeam extends React.Component{
@@ -34,6 +35,9 @@ class YourTeam extends React.Component{
                     this.setState({team:res.data})
                 }
             },(err)=>{
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
                 console.error(err);
             }
         )
@@ -56,14 +60,14 @@ class YourTeam extends React.Component{
                         <div className='legend'>
                             <ul style={ {listStyle: 'none' }}>
                                 <li style={{ float: 'left',marginRight: '10px' }}>
-                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '12px', height: '12px', margin: '2px',backgroundColor:'#a0a1e4' }}>
+                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '24px', height: '24px', margin: '2px',backgroundColor:'cornflowerblue' }}>
                                      </span>
-                                     Indian
+                                     <span>Indian</span>
                                 </li>
                                 <li style={{ float: 'right',marginRight: '10px' }}>
-                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '12px', height: '12px', margin: '2px',backgroundColor:'#d8bd56' }}>
+                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '24px', height: '24px', margin: '2px',backgroundColor:'palevioletred' }}>
                                      </span>
-                                     Overseas
+                                     <span>Overseas</span>
                                 </li>
                             </ul>
                         </div>
@@ -88,7 +92,7 @@ class YourTeam extends React.Component{
                                 {
                                     team.map(
                                         (player,index)=>
-                                            <tr key={index}>
+                                            <tr key={index} style={{backgroundColor:player.nationality =='Indian'?'cornflowerblue':'palevioletred'}}>
                                                 <td>
                                                     {index+1}
                                                 </td>

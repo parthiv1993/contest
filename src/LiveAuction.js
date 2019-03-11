@@ -4,15 +4,14 @@ import { Button, Row, Col, Table ,Card} from 'react-bootstrap';
 import Axios from 'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import _ from 'lodash';
-
-// import {Navbar,Nav,Form,FormControl,Button} from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 class LiveAuction extends Component {
     constructor(props){
         super(props);
         this.state = {
             currentAuctionInfo : null,
-            bidAmt : null
+            bidAmt : 5
         }
     }
 
@@ -30,11 +29,13 @@ class LiveAuction extends Component {
         Axios.get(Constants.BASE_URL + '/liveAuctionInfo',getHeaderObject()).then(
             (res)=>{
                 if(!_.isEqual(res.data,this.state.currentAuctionInfo)){
-                    
-                    const bidAmt = res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5
+                    const bidAmt = res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5 || 5
                     this.setState({currentAuctionInfo:res.data,bidAmt})
                 }
             },(err)=>{
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
                 console.error(err); 
             }
         )
@@ -60,7 +61,13 @@ class LiveAuction extends Component {
             const playerId =this.state.currentAuctionInfo.playerId;
             this.doBidRequest(playerId,this.state.bidAmt,userName).then(
                 (res)=>{
+                    // toast.success('Bid Successfully Placed');
                     this.getLiveAuctionInfo()
+                },(err)=>{
+                    if(err && err.response && err.response.data && err.response.data.message){
+                        toast.error(err.response.data.message);
+                      }
+                    console.error(err); 
                 }
             )
         }
@@ -73,7 +80,15 @@ class LiveAuction extends Component {
     markPlayerSoldHandler(){
         this.markPlayerSoldRequest(this.state.currentAuctionInfo.playerId).then(
             (res)=>{
-                this.getLiveAuctionInfo()
+                if(res.data && res.data.message){
+                    toast.success(res.data.message)
+                }
+                this.getLiveAuctionInfo();
+            },(err)=>{
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
+                console.error(err);
             }
         )
     }
@@ -87,12 +102,19 @@ class LiveAuction extends Component {
             res=>{
                 this.getLiveAuctionInfo();
             },err=>{
+                if(err && err.response && err.response.data && err.response.data.message){
+                    toast.error(err.response.data.message);
+                  }
                 console.err(err);
             }
         )
     }
     bringNextPlayerRequest(){
         return Axios.get(Constants.BASE_URL +'/bringNextPlayer',getHeaderObject());
+    }
+
+    onRefreshHandler(){
+        this.getLiveAuctionInfo();
     }
 
     render() {
@@ -105,6 +127,7 @@ class LiveAuction extends Component {
                 <Card>
                     <Card.Header>
                         Current/ Last Player
+                        <Button variant="dark" size='sm' style={{float:'right'}} onClick={this.onRefreshHandler.bind(this)}>Refresh</Button>
                     </Card.Header>
                     <Card.Body>
                         <Row style={{margin:'0px'}}>
@@ -138,7 +161,7 @@ class LiveAuction extends Component {
                             {!currentPlayer.soldTo &&
                                 <Col sm={12}>
                                     <input style={{margin : '15px',marginLeft:'0px'}} type='number' step='5' 
-                                        value={this.state.bidAmt}
+                                        value={this.state.bidAmt }
                                         placeholder='Bid Amount'
                                         onBlur={this.roundOff.bind(this)}
                                         onChange={this.handleBidInputChange.bind(this)}/>

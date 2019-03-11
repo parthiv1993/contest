@@ -1,5 +1,5 @@
 let router = require('express').Router();
-const {checkIfCanBid,checkRoleRequired,createJwt,
+const {checkIfCanBidAndAddBid,checkRoleRequired,createJwt,
         getLivePlayer,markAsSold,getRemainingPoints,getMyTeam,
         bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount}  =require('./constants/CadnU');
 
@@ -11,38 +11,63 @@ router.get('/', function (req, res) {
 
 // This responds a POST request for the homepage
 router.post('/login', function (req, res) {
-    console.log(req);
-    console.log(req.body);
-    console.log(req.body.nickName);
     const token = createJwt(req.body.nickName);
-    res.send({token});
+    if(token){
+        res.send({token});
+        return;
+    }
+    else{
+        res.status(401);
+        res.send({message:'Invalid Nickname'});
+    }
 })
  
 router.get('/liveAuctionInfo',function(req,res){
     const auth = checkRoleRequired(req,1)
     if(auth == true){
-        res.send(getLivePlayer())
+        const result = getLivePlayer();
+        if(result){
+            res.send(result);
+            return;
+        }
+        res.status(400);
+        res.send({message:'something went wrong'});
         return;
     }
-    res.send(auth);
+    res.status(403);
+    res.send({message:'You need authorization'});
 })
 
 router.post('/addBid',function(req,res){
     const auth = checkRoleRequired(req,2)
     if(auth==true) {
-        res.send(checkIfCanBid(req.body))
+        const result = checkIfCanBidAndAddBid(req.body)
+        if(result.success){
+            res.send(result.body);
+            return;
+        }
+        res.status(400);
+        res.send({message:result.body});
         return;
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You need authorization'});
 })
 
 router.post('/markAsSold',function(req,res){
     const auth = checkRoleRequired(req,3)
     if(auth==true) {
-        res.send(markAsSold(req.body))
+        const result = markAsSold(req.body)
+        if(result.success){
+            res.send({message : result.message});
+            return;
+        }
+        res.status(400);
+        res.send({message:'something went wrong'});
         return;
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You don\'t have required roles'});
 })
 
 router.get('/remaningPoints',function(req,res){
@@ -51,26 +76,34 @@ router.get('/remaningPoints',function(req,res){
         res.send(getRemainingPoints());
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You have have access to points'});
 })
 
 router.get('/myTeam',function(req,res){
-    const auth = checkRoleRequired(req,2)
+    const auth = checkRoleRequired(req,1)
     if(auth ==true){ 
         res.send(getMyTeam(req));
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You do not have access to Team Players'});
 })
-
 
 router.get('/bringNextPlayer',function(req,res){
     const auth = checkRoleRequired(req,3)
     if(auth ==true){ 
-        res.send(bringNextPlayer(req));
+        const result = bringNextPlayer();
+        if(result.success){
+            res.send(result.message);
+            return;
+        }
+        res.status(400);
+        res.send(result.message);
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You do not have access to Fetch Next player'});
 })
 
 router.get('/resetAuction',function(req,res){
@@ -79,16 +112,18 @@ router.get('/resetAuction',function(req,res){
         res.send(resetAuction());
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You do not have access to reset Auction'});
 })
 
 router.get('/allPlayers',function(req,res){
-    const auth = checkRoleRequired(req,2)
+    const auth = checkRoleRequired(req,1)
     if(auth ==true){ 
         res.send(getAllPlayers());
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You do not have access to Fetch all players data'});
 })
 
 router.get('/getRemainingPlayersCount',function(req,res){
@@ -97,7 +132,8 @@ router.get('/getRemainingPlayersCount',function(req,res){
         res.send(getRemainingPlayersCount());
         return;  
     }
-    res.send(false);
+    res.status(403);
+    res.send({message:'You do not have access to Fetch all players data'});
 })
 
 module.exports=router;
