@@ -200,9 +200,10 @@ function getRemainingPlayersCount() {
     var C = CGradePlayers.length;
     var D = DGradePlayers.length;
     var Unsold = unsoldPlayer.length;
-    var Total = A+B+C+D+Unsold;
+    var Total_Remaining = A+B+C+D+Unsold;
+    var soldPlayers = soldPlayer.length;
     return {
-        A,B,C,D, Unsold,Total
+        soldPlayers,A,B,C,D, Unsold,Total_Remaining
     }
 }
 
