@@ -40,6 +40,7 @@ class Navigation extends Component {
                     userName=='Parthiv' &&
                     <Button variant="outline-info" onClick={this.startAuctionHandler.bind(this)}>Start Auction</Button>
                 }
+                &nbsp;
                 <Button variant="outline-info" onClick={this.logOut.bind(this)}>Log Out</Button>
             </Navbar>
                     

@@ -6,18 +6,18 @@ import Constants from './Constants';
 import { Table, Card } from 'react-bootstrap';
 
 
-class PointsRemaining extends React.Component{
+class PlayerRemaining extends React.Component{
     constructor(props){
         super(props);
         this.state ={
-            points : null
+            count:null
         }
     }
 
     componentDidMount(){
-        this.remainingPointsRequest();
+        this.remainingPlayerRequest();
         this.interval = setInterval(()=>{
-            this.remainingPointsRequest();
+            this.remainingPlayerRequest();
         },Constants.POINTS_POLL_TIME)
     
     }
@@ -25,12 +25,12 @@ class PointsRemaining extends React.Component{
     componentWillUnmount(){
         window.clearInterval(this.interval);
     }
-    
-    remainingPointsRequest(){
-        Axios.get(Constants.BASE_URL + '/remaningPoints',getHeaderObject()).then(
+
+    remainingPlayerRequest(){
+        Axios.get(Constants.BASE_URL + '/getRemainingPlayersCount',getHeaderObject()).then(
             (res)=>{
                 if(!_.isEqual(res.data,this.state.points)){
-                    this.setState({points:res.data})
+                    this.setState({count:res.data})
                 }
             },(err)=>{
                 console.error(err);
@@ -38,35 +38,36 @@ class PointsRemaining extends React.Component{
         )
     }
 
+
     render(){
-        const points =this.state.points;
+        const count = this.state.count;
         const user = localStorage.getItem('user');
-        if(points ){
+        if(count){
             return(
                 <Card>
                     <Card.Header as="h5">
-                        Points Remaining
+                        Players Remaining
                     </Card.Header>
                     <Card.Body>
                         <Table striped={true} bordered={true} hover={true} >
                                 <thead>
                                     <tr>
                                         <th>
-                                            Team Owner
+                                            Grade
                                         </th>
                                         <th>
-                                            Points
+                                            Number of Players
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {Object.keys(points).map((key,index)=>
+                                    {Object.keys(count).map((key,index)=>
                                         <tr key={index }>
                                             <td >
                                                 {key}
                                             </td>
                                             <td>
-                                                {points[key]}
+                                                {count[key]}
                                             </td>
                                         </tr>)}
                                 </tbody>
@@ -79,4 +80,4 @@ class PointsRemaining extends React.Component{
     }
 }
 
-export default PointsRemaining;
+export default PlayerRemaining;
