@@ -98,6 +98,8 @@ class LiveAuction extends Component {
     render() {
         const userName = localStorage.getItem('user') || 'User';
         const currentPlayer = this.state.currentAuctionInfo;
+        const bidsPresent = currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
+        const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';
         if(currentPlayer){
             return(
                 <Card>
@@ -118,26 +120,11 @@ class LiveAuction extends Component {
                             <Col sm={12}>
                                 {`Grade : ${currentPlayer.grade}`}
                             </Col>
-                                {!currentPlayer.soldTo &&
-                                    <Col sm={12}>
-                                    <input style={{margin : '15px'}} type='number' step='5' 
-                                        value={this.state.bidAmt}
-                                        placeholder='Bid Amount'
-                                        onBlur={this.roundOff.bind(this)}
-                                        onChange={this.handleBidInputChange.bind(this)}/>
-                                    {userName != 'readOnly' && <Button size='sm' onClick={this.bid.bind(this)}>Bid</Button>} &nbsp;
-                                    {(userName === 'Parthiv' || userName ==='Nikhil')&& 
-                                        <span>
-                                        <Button size='sm' variant="danger" 
-                                            onClick={this.markPlayerSoldHandler.bind(this)}>Mark as Sold
-                                        </Button>
-                                        
-                                        </span>
-                                    }
-                                    </Col>
-                                }
-                                {
-                                    currentPlayer.soldTo &&
+                            <Col sm={12}>
+                                {`Nationality : ${currentPlayer.nationality}`}
+                            </Col>
+                            {
+                                currentPlayer.soldTo &&
                                     <span>
                                         <Col sm={12}>
                                             {`Sold to : ${currentPlayer.soldTo}`}
@@ -147,12 +134,33 @@ class LiveAuction extends Component {
                                         </Col>
                                         
                                     </span>
-                                }
+                            }
+                            {!currentPlayer.soldTo &&
                                 <Col sm={12}>
-                                        <Button size='sm' variant="info" 
-                                            onClick={this.bringNextPlayerHandler.bind(this)}>Next Player
+                                    <input style={{margin : '15px'}} type='number' step='5' 
+                                        value={this.state.bidAmt}
+                                        placeholder='Bid Amount'
+                                        onBlur={this.roundOff.bind(this)}
+                                        onChange={this.handleBidInputChange.bind(this)}/>
+                                    {userName != 'readOnly' && <Button size='sm' onClick={this.bid.bind(this)}>Bid</Button>}
+                                </Col>
+                            }
+                            {!currentPlayer.soldTo && (userName === 'Parthiv' || userName ==='Nikhil') && 
+                                    <Col sm={12}>
+                                        <Button size='sm' variant="danger" 
+                                            onClick={this.markPlayerSoldHandler.bind(this)}>{soldButtonName}
                                         </Button>
-                                        </Col>
+                                    </Col>
+                            }
+                            
+                            {
+                                currentPlayer.soldTo &&
+                                    <Col sm={12}>
+                                        <Button size='sm' variant="info" 
+                                            onClick={this.bringNextPlayerHandler.bind(this)}>Get Next Player
+                                        </Button>
+                                    </Col>
+                            }
                             <Col sm={12}>
                                 {DisplayBids(currentPlayer.bids)}
                             </Col>
