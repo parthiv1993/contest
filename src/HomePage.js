@@ -5,7 +5,7 @@ import { Row,Col } from 'react-bootstrap';
 import PointsRemaining from './PointsRemaining';
 import YourTeam from './YourTeam';
 import AllPlayerDetails from './AllPlayerDetails';
-import PlayersRemaining from '.PlayersRemaining';
+import PlayersRemaining from './PlayersRemaining';
 
 
 
@@ -17,10 +17,10 @@ class HomePage extends Component {
           <br/>
           <br/>
           <Row style={{margin:'0px'}}>
-            <Col sm={12]} lg={3} >
+            <Col sm={12} lg={3} >
               <LiveAuction/>
               </Col>
-            <Col sm={12]} lg={3} >
+            <Col sm={12} lg={3} >
               <PlayersRemaining/>
               </Col>
             <Col  sm={12} lg={3}>

@@ -98,7 +98,7 @@ class LiveAuction extends Component {
     render() {
         const userName = localStorage.getItem('user') || 'User';
         const currentPlayer = this.state.currentAuctionInfo;
-        const bidsPresent = currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
+        const bidsPresent = currentPlayer && currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
         const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';
         if(currentPlayer){
             return(
@@ -137,7 +137,7 @@ class LiveAuction extends Component {
                             }
                             {!currentPlayer.soldTo &&
                                 <Col sm={12}>
-                                    <input style={{margin : '15px'}} type='number' step='5' 
+                                    <input style={{margin : '15px',marginLeft:'0px'}} type='number' step='5' 
                                         value={this.state.bidAmt}
                                         placeholder='Bid Amount'
                                         onBlur={this.roundOff.bind(this)}

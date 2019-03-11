@@ -136,6 +136,7 @@ function getMyTeam(request){
 function bringNextPlayer() {
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
         livePlayer = getNextPlayer();
+        console.log(livePlayer);
         return true;
     }
     return false;
@@ -148,25 +149,28 @@ function getNextPlayer() {
         const ind = Math.floor(Math.random()*len);
         return AGradePlayers.splice(ind,1)[0];
     }
-    if(BGradePlayers.length>0){
-        len = BGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return BGradePlayers.splice(ind,1)[0];
-    }
-    if(CGradePlayers.length>0){
-        len = CGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return CGradePlayers.splice(ind,1)[0];
-    }
-    if(DGradePlayers.length>0){
-        len = DGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return DGradePlayers.splice(ind,1)[0];
-    }
+    // if(BGradePlayers.length>0){
+    //     len = BGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return BGradePlayers.splice(ind,1)[0];
+    // }
+    // if(CGradePlayers.length>0){
+    //     len = CGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return CGradePlayers.splice(ind,1)[0];
+    // }
+    // if(DGradePlayers.length>0){
+    //     len = DGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return DGradePlayers.splice(ind,1)[0];
+    // }
     if(unsoldPlayer.length>0){
         len = unsoldPlayer.length;
         const ind = Math.floor(Math.random()*len);
-        return unsoldPlayer.splice(ind,1)[0];
+        const player = unsoldPlayer.splice(ind,1)[0];
+        player.soldTo = null;
+        console.log(player);
+        return player;
     }
 }
 
@@ -190,7 +194,9 @@ function getAllPlayers(){
     players = players.concat(DGradePlayers);
     players = players.concat(soldPlayer);
     players = players.concat(unsoldPlayer);
-    players.unshift(livePlayer);
+    if(livePlayer && livePlayer.playerId){
+        players.unshift(livePlayer);
+    }
     return players;
 }
 
@@ -201,9 +207,9 @@ function getRemainingPlayersCount() {
     var D = DGradePlayers.length;
     var Unsold = unsoldPlayer.length;
     var Total_Remaining = A+B+C+D+Unsold;
-    var soldPlayers = soldPlayer.length;
+    var Sold_Players = soldPlayer.length;
     return {
-        soldPlayers,A,B,C,D, Unsold,Total_Remaining
+        Sold_Players,A,B,C,D, Unsold,Total_Remaining
     }
 }
 

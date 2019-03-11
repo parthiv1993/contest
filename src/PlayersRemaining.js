@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Axios from'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
-import { Table, Card } from 'react-bootstrap';
+import { Table, Card, Button } from 'react-bootstrap';
 
 
 class PlayerRemaining extends React.Component{
@@ -38,6 +38,9 @@ class PlayerRemaining extends React.Component{
         )
     }
 
+    onRefreshHandler(){
+        this.remainingPlayerRequest();
+    }
 
     render(){
         const count = this.state.count;
@@ -47,6 +50,7 @@ class PlayerRemaining extends React.Component{
                 <Card>
                     <Card.Header as="h5">
                         Players Remaining
+                        <Button variant="dark" size='sm' style={{float:'right'}} onClick={this.onRefreshHandler.bind(this)}>Refresh</Button>
                     </Card.Header>
                     <Card.Body>
                         <Table striped={true} bordered={true} hover={true} >
@@ -64,7 +68,7 @@ class PlayerRemaining extends React.Component{
                                     {Object.keys(count).map((key,index)=>
                                         <tr key={index }>
                                             <td >
-                                                {key}
+                                                {key.replace('_',' ')}
                                             </td>
                                             <td>
                                                 {count[key]}

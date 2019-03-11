@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Axios from'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
-import { Table ,Card} from 'react-bootstrap';
+import { Table ,Card,Button} from 'react-bootstrap';
 
 
 class YourTeam extends React.Component{
@@ -39,16 +39,40 @@ class YourTeam extends React.Component{
         )
     }
 
+    onRefreshHandler(){
+        this.getYourTeam();
+    }
+
     render(){
         const team = this.state.team;
         if(team){
             return(
                 <Card>
-                    <Card.Header as="h5">My Team</Card.Header>
+                    <Card.Header as="h5">
+                        My Team
+                        <Button variant="dark" size='sm' style={{float:'right'}} onClick={this.onRefreshHandler.bind(this)}>Refresh</Button>
+                    </Card.Header>
                     <Card.Body>
-                    <Table triped='true' bordered='true' hover='true' size="sm">
+                        <div className='legend'>
+                            <ul style={ {listStyle: 'none' }}>
+                                <li style={{ float: 'left',marginRight: '10px' }}>
+                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '12px', height: '12px', margin: '2px',backgroundColor:'#a0a1e4' }}>
+                                     </span>
+                                     Indian
+                                </li>
+                                <li style={{ float: 'right',marginRight: '10px' }}>
+                                    <span style={{ border: '1px solid #ccc',float: 'left', width: '12px', height: '12px', margin: '2px',backgroundColor:'#d8bd56' }}>
+                                     </span>
+                                     Overseas
+                                </li>
+                            </ul>
+                        </div>
+                    <Table bordered='true' hover='true' size="sm">
                             <thead>
                                 <tr>
+                                    <th>
+                                        Sr.
+                                    </th>
                                     <th>
                                         Player Name
                                     </th>
@@ -65,6 +89,9 @@ class YourTeam extends React.Component{
                                     team.map(
                                         (player,index)=>
                                             <tr key={index}>
+                                                <td>
+                                                    {index+1}
+                                                </td>
                                                 <td>
                                                     {player.name}
                                                 </td>

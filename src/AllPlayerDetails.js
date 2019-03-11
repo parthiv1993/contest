@@ -38,6 +38,7 @@ const columns = [
     { key : 'grade',name:'Grade',sortable:true,filterable :true},
     { key: 'team', name: 'IPL Team' ,sortable:true,filterable :true},
     { key: 'soldTo', name: 'Sold To' ,sortable:true,filterable : true} ,
+    { key: 'nationality', name: 'Nationality' ,sortable:true,filterable : true} ,
     { key: 'soldAt', name: 'Price' ,sortable:true} 
 ]
 

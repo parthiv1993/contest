@@ -3,7 +3,7 @@ import _ from 'lodash';
 import Axios from'axios';
 import { getJwtToken, getHeaderObject } from './util';
 import Constants from './Constants';
-import { Table, Card } from 'react-bootstrap';
+import { Table, Card ,Button} from 'react-bootstrap';
 
 
 class PointsRemaining extends React.Component{
@@ -38,6 +38,11 @@ class PointsRemaining extends React.Component{
         )
     }
 
+
+    onRefreshHandler(){
+        this.remainingPointsRequest();
+    }
+
     render(){
         const points =this.state.points;
         const user = localStorage.getItem('user');
@@ -46,6 +51,7 @@ class PointsRemaining extends React.Component{
                 <Card>
                     <Card.Header as="h5">
                         Points Remaining
+                        <Button variant="dark" size='sm' style={{float:'right'}} onClick={this.onRefreshHandler.bind(this)}>Refresh</Button>
                     </Card.Header>
                     <Card.Body>
                         <Table striped={true} bordered={true} hover={true} >
