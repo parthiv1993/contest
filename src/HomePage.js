@@ -5,6 +5,7 @@ import { Row,Col } from 'react-bootstrap';
 import PointsRemaining from './PointsRemaining';
 import YourTeam from './YourTeam';
 import AllPlayerDetails from './AllPlayerDetails';
+import PlayersRemaining from '.PlayersRemaining';
 
 
 
@@ -20,7 +21,7 @@ class HomePage extends Component {
               <LiveAuction/>
               </Col>
             <Col sm={12]} lg={3} >
-              <LiveAuction/>
+              <PlayersRemaining/>
               </Col>
             <Col  sm={12} lg={3}>
               <PointsRemaining/>
