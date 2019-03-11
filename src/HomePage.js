@@ -16,7 +16,10 @@ class HomePage extends Component {
           <br/>
           <br/>
           <Row style={{margin:'0px'}}>
-            <Col sm={12} lg={6} >
+            <Col sm={12]} lg={3} >
+              <LiveAuction/>
+              </Col>
+            <Col sm={12]} lg={3} >
               <LiveAuction/>
               </Col>
             <Col  sm={12} lg={3}>
