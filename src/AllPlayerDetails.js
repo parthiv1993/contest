@@ -66,10 +66,10 @@ class AllPlayerDetails extends React.Component{
     download (){
         try{
             const doc = new jsPDF();
-
+            const filteredPlayers = this.getRows(this.state.dPlayers, this.state.filters);
             doc.autoTable({
                 head: [['ID','Player Name','Team','Sold At','Sold To','Grade','Nationality']],
-                body:this.state.filteredPlayers.map(player=>
+                body:filteredPlayers.map(player=>
                     [
                         player.playerId,
                         player.name,
@@ -115,14 +115,17 @@ class AllPlayerDetails extends React.Component{
         return sortDirection === "NONE" ? initialRows : initialRows.sort(comparer);
     };
 
-    handleFilterChange = filter => filters => {
-        const newFilters = { ...filters };
-        if (filter.filterTerm) {
-          newFilters[filter.column.key] = filter;
+    handleFilterChange = filters => {
+        // const newFilters = { ...filters };
+        const oldFilter = this.state.filters;
+        const key = filters.column.key;
+
+        if (filters.filterTerm) {
+          oldFilter[key] = filters;
         } else {
-          delete newFilters[filter.column.key];
+          delete oldFilter[key];
         }
-        return newFilters;
+        return oldFilter;
     };
 
     setFilters(filters){
@@ -148,11 +151,6 @@ class AllPlayerDetails extends React.Component{
                     <Button variant={'info'} style={{float:'right'}} onClick={this.refreshDataHandler.bind(this)}>
                         Refresh Data
                     </Button>
-                    {/* <span style={{float:'right'}}>&nbsp;</span>
-                    <Button variant={'info'} style={{float:'right'}} onClick={this.refreshDataHandler.bind(this)}>
-                        Filter
-                    </Button> */}
-                    {/* <Grid players={players}/> */}
                     <ReactDataGrid
                         columns={this.columns}
                         rowGetter={i => filteredRows[i]}

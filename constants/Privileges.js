@@ -6,5 +6,6 @@ module.exports={
     'Vohera' : 2,
     'Prakash':2,
     'Mantrix':2,
+    'Vishal' : 2,
     'readOnly' : 1
 }

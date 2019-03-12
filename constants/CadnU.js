@@ -12,29 +12,25 @@ var points=Object.assign({},initialPoints);
 
 const PRIVATE_KEY = 'PRIVATE';
 
-// var remainingPlayer  = allPlayerJson;
 
-var AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A')
-var BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B')
-var CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C')
-var DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D')
+var Allplayers  = allPlayerJson;
 
-var unsoldPlayer=[]
+var AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A');
+var BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B');
+var CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C');
+var DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D');
 
-var soldPlayer = []
+var unsoldPlayer=[];
 
-var livePlayer = getNextPlayer()
+var soldPlayer = [];
 
+var livePlayer = getNextPlayer();
 
-function CreatePlayer(playerId,name , bids , soldAt , soldTo , team , grade ) {
-    this.playerId = playerId;
-    this.name = name;
-    this.bids = bids;
-    this.soldAt = soldAt;
-    this.soldTo = soldTo;
-    this.team = team;
-    this.grade = grade;
-}
+var timerEnabled = true;
+var timeOutToMarkPlayerSoldAfterBid = null;
+var timeWaitToSold = 60000; //1 min
+var timeOutToGetNextPlayerAfterSold = null;
+var timeWaitToBringNextPlayer = 120000; // 2 min
 
 function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
@@ -67,7 +63,6 @@ function getLivePlayer(){
     return livePlayer;
 }
 
-
 function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
     var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
@@ -77,15 +72,21 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
             if(points[bidBy]>=bidAmt){
                 
                 if(getPlayersOfUser(bidBy).length<20){
-                    
+                    if(timeOutToMarkPlayerSoldAfterBid && timerEnabled){
+                        clearTimeout(timeOutToMarkPlayerSoldAfterBid)
+                    }
                     livePlayer.bids.unshift({
                         bidBy:bidBy,
                         bidAmt:bidAmt
                     });
+                    if(timerEnabled){
+                        timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>markAsSold({playerId}),timeWaitToSold);
+                    }
                     return({
                         success:true,
                         body : 'Bid Placed Successfully'
                     })
+                    
                 }
                 body = 'you can not have more than 20 players';
                 return {success:false,body}
@@ -111,6 +112,9 @@ function markAsSold({playerId}){
             points[bidBy]=points[bidBy]-bidAmt;
             const message = `Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`
             console.log(`Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`)
+            if(timerEnabled){
+                timeOutToGetNextPlayerAfterSold = setTimeout(()=>bringNextPlayer(),timeOutToGetNextPlayerAfterSold)
+            }
             return {success:true,message};
         }
         else{
@@ -118,6 +122,9 @@ function markAsSold({playerId}){
             unsoldPlayer.push(livePlayer);
             const message = `Player with id ${playerId} remained unsold`;
             console.log(message);
+            if(timerEnabled){
+                timeOutToGetNextPlayerAfterSold = setTimeout(()=>bringNextPlayer(),timeOutToGetNextPlayerAfterSold)
+            }
             return {success:true,message};
         }
     }
@@ -147,6 +154,7 @@ function getPlayersOfUser(user){
 }
 
 function bringNextPlayer() {
+    clearTimeout(timeOutToGetNextPlayerAfterSold);
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
         livePlayer = getNextPlayer();
         const message = `Player with id ${livePlayer.playerId} is next Player`;
@@ -186,7 +194,6 @@ function getNextPlayer() {
     }
 }
 
-
 function resetAuction(){
     AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A')
     BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B')
@@ -200,11 +207,11 @@ function resetAuction(){
 
 function getAllPlayers(){
     let players =[];
+    players = players.concat(soldPlayer);
     players = players.concat(AGradePlayers);
     players = players.concat(BGradePlayers);
     players = players.concat(CGradePlayers);
     players = players.concat(DGradePlayers);
-    players = players.concat(soldPlayer);
     players = players.concat(unsoldPlayer);
     if(livePlayer && livePlayer.playerId){
         players.unshift(livePlayer);
@@ -225,6 +232,46 @@ function getRemainingPlayersCount() {
     }
 }
 
+function clearTimer(){
+    clearTimeout(timeOutToMarkPlayerSoldAfterBid);
+    return 'Timer Paused for player with player Id : '+livePlayer.playerId;
+}
+
+function startTimer(){
+    if(livePlayer.playerId && !livePlayer.soldTo){
+        timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>markAsSold({playerId:livePlayer.playerId}),timeWaitToSold);
+        return 'Timer started for Player with player id : '+livePlayer.playerId;
+    }
+    return false;
+}
+
+function toggleTimerEnabled(){
+    timerEnabled = !timerEnabled;
+    return 'Current status : Timer Enabled :'+timerEnabled;
+}
+
+function changeTimerWaitForSold(newtimeWait){
+    timeWaitToSold = newtimeWait;
+    return 'timeWaitToSold set to '+newtimeWait;
+}
+
+function changeTimerWaitForNextPlayer(newtimeWait){
+    timeWaitToBringNextPlayer = newtimeWait;
+    return 'timeWaitToBringNextPlayer set to '+newtimeWait;
+}
+
+function getStatus(){
+    return {
+        timerEnabled,
+        timeOutToMarkPlayerSoldAfterBid:timeOutToMarkPlayerSoldAfterBid?true:false,
+        timeWaitToSold,
+        timeOutToGetNextPlayerAfterSold : timeOutToGetNextPlayerAfterSold?true:false,
+        timeWaitToBringNextPlayer,
+        userNames,
+        privilege
+    }
+}
+
 module.exports = {
     userNames,
     PRIVATE_KEY,
@@ -238,5 +285,11 @@ module.exports = {
     bringNextPlayer,
     resetAuction,
     getAllPlayers,
-    getRemainingPlayersCount
+    getRemainingPlayersCount,
+    clearTimer,
+    startTimer,
+    toggleTimerEnabled,
+    changeTimerWaitForSold,
+    changeTimerWaitForNextPlayer,
+    getStatus
 }

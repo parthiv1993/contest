@@ -1,7 +1,9 @@
 let router = require('express').Router();
 const {checkIfCanBidAndAddBid,checkRoleRequired,createJwt,
         getLivePlayer,markAsSold,getRemainingPoints,getMyTeam,
-        bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount}  =require('./constants/CadnU');
+        bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount,   
+        clearTimer,startTimer,toggleTimerEnabled,changeTimerWaitForSold,
+        changeTimerWaitForNextPlayer,getStatus}  =require('./constants/CadnU');
 
 router.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
@@ -135,5 +137,75 @@ router.get('/getRemainingPlayersCount',function(req,res){
     res.status(403);
     res.send({message:'You do not have access to Fetch all players data'});
 })
+
+router.get('/pauseTimer',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(clearTimer());
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to Pause the timer'});
+})
+
+router.get('/startTimer',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(startTimer());
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to start the timer'});
+})
+
+router.get('/toggleTimerEnabled',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(toggleTimerEnabled());
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to Toogle the timer'});
+})
+
+router.post('/changeTimerWaitForSold',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(changeTimerWaitForSold(req.body.timeWait));
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to Toogle the timer'});
+})
+
+router.post('/changeTimerWaitForNextPlayer',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(changeTimerWaitForNextPlayer(req.body.timeWait));
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to Toogle the timer'});
+})
+
+router.get('/getStatus',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){ 
+        res.send(getStatus());
+        return;  
+    }
+    res.status(403);
+    res.send({message:'You do not have access to Toogle the timer'});
+})
+
+// router.post('./setNextPlayer',function(req,res){
+//     const auth = checkRoleRequired(req,4);
+//     if(auth ==true){ 
+//         res.send(setNextPlayer(req.body.playerId));
+//         return;  
+//     }
+//     res.status(404);
+// })
+
 
 module.exports=router;
