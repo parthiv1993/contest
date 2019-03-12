@@ -123,8 +123,8 @@ class Navigation extends Component {
 
     renderOtherOptions(){
         return (
-            <span>
-                <input onChange={(e)=>{this.inputText = parseInt(e.target.value)}} ></input>
+            <div>
+                
                 <Dropdown>
                     <Dropdown.Toggle variant="outline-info" id="dropdown-basic">
                         Other Options
@@ -151,7 +151,7 @@ class Navigation extends Component {
                         </Dropdown.Item>
                     </Dropdown.Menu>
                 </Dropdown>
-            </span>
+            </div>
         ) 
     }
 
@@ -167,6 +167,11 @@ class Navigation extends Component {
                 </Nav>
                 {
                     userName=='Parthiv' && this.state.isExtendedMenuOption && 
+                    <input onChange={(e)=>{this.inputText = parseInt(e.target.value)}}></input>
+                }
+                &nbsp;
+                {
+                    userName=='Parthiv' && this.state.isExtendedMenuOption && 
                     this.renderOtherOptions()
                 }
                 &nbsp;
@@ -175,6 +180,7 @@ class Navigation extends Component {
                     <Button variant="outline-info" onClick={this.startAuctionHandler.bind(this)}>Start Auction</Button>
                 }
                 &nbsp;
+
                 
                 <Button variant="outline-info" onClick={this.logOut.bind(this)}>Log Out</Button>
             </Navbar>

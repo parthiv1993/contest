@@ -1,5 +1,5 @@
 module.exports= {
-    hehehaha : 'Parthiv',
+    hehe : 'Parthiv',
     pokemon : 'Nikhil',
     charsula : 'Shashank',
     ravvi : 'Ravi',
