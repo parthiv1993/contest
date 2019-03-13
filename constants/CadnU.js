@@ -12,13 +12,23 @@ var points=Object.assign({},initialPoints);
 
 const PRIVATE_KEY = 'PRIVATE';
 
+function copyArray(o) {
+    var output, v, key;
+    output = Array.isArray(o) ? [] : {};
+    for (key in o) {
+        v = o[key];
+        output[key] = (typeof v === "object") ? copyArray(v) : v;
+    }
+    return output;
+ }
+
 
 var Allplayers  = allPlayerJson;
 
-var AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A');
-var BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B');
-var CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C');
-var DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D');
+var AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+var BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+var CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+var DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
 
 var unsoldPlayer=[];
 
@@ -220,10 +230,10 @@ function getNextPlayer() {
 }
 
 function resetAuction(){
-    AGradePlayers = allPlayerJson.filter((player)=> player.grade=='A')
-    BGradePlayers = allPlayerJson.filter((player)=> player.grade=='B')
-    CGradePlayers = allPlayerJson.filter((player)=> player.grade=='C')
-    DGradePlayers = allPlayerJson.filter((player)=> player.grade=='D')
+    AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+    BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+    CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+    DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
     points = initialPoints;
     soldPlayer = [];
     unsoldPlayer = [];
