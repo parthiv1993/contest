@@ -146,7 +146,7 @@ class LiveAuction extends Component {
                             <Col sm={12}>
                                 {`Nationality : ${currentPlayer.nationality}`}
                             </Col>
-                            <Col sm={12}>
+                            <Col sm={12}> 
                                 {`Time Left : ${currentPlayer.timeLeft ? currentPlayer.timeLeft/1000-3: 'null'} Seconds`}
                             </Col>
                             {

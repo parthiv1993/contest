@@ -14,12 +14,15 @@ const PRIVATE_KEY = 'PRIVATE';
 
 function copyArray(o) {
     var output, v, key;
-    output = Array.isArray(o) ? [] : {};
-    for (key in o) {
-        v = o[key];
-        output[key] = (typeof v === "object") ? copyArray(v) : v;
+    if(o){
+        output = Array.isArray(o) ? [] : {};
+        for (key in o) {
+            v = o[key];
+            output[key] = (typeof v === "object") ? copyArray(v) : v;
+        }
+        return output;
     }
-    return output;
+    return o;
  }
 
 
