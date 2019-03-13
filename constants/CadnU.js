@@ -39,7 +39,6 @@ function startSellingTimer(playerId){
     timeLeftInSoldTimer = timeWaitToSold
     intervalToDecreaseSoldTimer = setInterval(()=>{
         timeLeftInSoldTimer=timeLeftInSoldTimer-1000;
-        console.log(timeLeftInSoldTimer)
     },1000);
     timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>{
         clearInterval(intervalToDecreaseSoldTimer);
