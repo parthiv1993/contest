@@ -6,6 +6,6 @@ module.exports= {
     aboveabhi : 'Vohera',
     churanbaba : 'Prakash',
     'mantrix@511': 'Mantrix',
-    bafnaVishal : 'Vishal',
+    vish123 : 'Vishal',
     readonly : 'readOnly'
 };

@@ -28,9 +28,38 @@ var livePlayer = getNextPlayer();
 
 var timerEnabled = true;
 var timeOutToMarkPlayerSoldAfterBid = null;
-var timeWaitToSold = 60000; //1 min
+var timeWaitToSold = 45000; //45 sec
 var timeOutToGetNextPlayerAfterSold = null;
-var timeWaitToBringNextPlayer = 120000; // 2 min
+var timeWaitToBringNextPlayer = 60000; // 60 sec
+var timeLeftInSoldTimer = null;
+var intervalToDecreaseSoldTimer = null;
+
+function startSellingTimer(playerId){
+    clearAllTimers()
+    timeLeftInSoldTimer = timeWaitToSold
+    intervalToDecreaseSoldTimer = setInterval(()=>{
+        timeLeftInSoldTimer=timeLeftInSoldTimer-1000;
+        console.log(timeLeftInSoldTimer)
+    },1000);
+    timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>{
+        clearInterval(intervalToDecreaseSoldTimer);
+        markAsSold({playerId})
+    },timeWaitToSold);
+}
+
+function startNextPlayerTimer(){
+    clearAllTimers()
+    timeOutToGetNextPlayerAfterSold = setTimeout(()=>{
+        bringNextPlayer()
+    },timeWaitToBringNextPlayer);
+}
+
+function clearAllTimers(){
+    clearTimeout(timeOutToMarkPlayerSoldAfterBid);
+    clearTimeout(timeOutToGetNextPlayerAfterSold);
+    clearInterval(intervalToDecreaseSoldTimer);
+    timeLeftInSoldTimer = null;
+}
 
 function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
@@ -60,7 +89,7 @@ function checkRoleRequired(request,requiredRole) {
 }
 
 function getLivePlayer(){
-    return livePlayer;
+    return {...livePlayer,timeLeft:timeLeftInSoldTimer};
 }
 
 function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
@@ -72,15 +101,12 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
             if(points[bidBy]>=bidAmt){
                 
                 if(getPlayersOfUser(bidBy).length<20){
-                    if(timeOutToMarkPlayerSoldAfterBid && timerEnabled){
-                        clearTimeout(timeOutToMarkPlayerSoldAfterBid)
-                    }
                     livePlayer.bids.unshift({
                         bidBy:bidBy,
                         bidAmt:bidAmt
                     });
                     if(timerEnabled){
-                        timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>markAsSold({playerId}),timeWaitToSold);
+                        startSellingTimer(playerId)
                     }
                     return({
                         success:true,
@@ -113,7 +139,7 @@ function markAsSold({playerId}){
             const message = `Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`
             console.log(`Player with id ${playerId} sold to ${bidBy} for ${bidAmt}`)
             if(timerEnabled){
-                timeOutToGetNextPlayerAfterSold = setTimeout(()=>bringNextPlayer(),timeOutToGetNextPlayerAfterSold)
+                startNextPlayerTimer();
             }
             return {success:true,message};
         }
@@ -123,7 +149,7 @@ function markAsSold({playerId}){
             const message = `Player with id ${playerId} remained unsold`;
             console.log(message);
             if(timerEnabled){
-                timeOutToGetNextPlayerAfterSold = setTimeout(()=>bringNextPlayer(),timeOutToGetNextPlayerAfterSold)
+                startNextPlayerTimer();
             }
             return {success:true,message};
         }
@@ -154,10 +180,10 @@ function getPlayersOfUser(user){
 }
 
 function bringNextPlayer() {
-    clearTimeout(timeOutToGetNextPlayerAfterSold);
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
         livePlayer = getNextPlayer();
         const message = `Player with id ${livePlayer.playerId} is next Player`;
+        startSellingTimer(livePlayer.playerId);
         return {success :true,message};
     }
     return {success:false,message:'Please sell the existing player or mark it unsold'};
@@ -233,13 +259,13 @@ function getRemainingPlayersCount() {
 }
 
 function clearTimer(){
-    clearTimeout(timeOutToMarkPlayerSoldAfterBid);
+    clearAllTimers()
     return 'Timer Paused for player with player Id : '+livePlayer.playerId;
 }
 
 function startTimer(){
     if(livePlayer.playerId && !livePlayer.soldTo){
-        timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>markAsSold({playerId:livePlayer.playerId}),timeWaitToSold);
+        startSellingTimer(livePlayer.playerId);
         return 'Timer started for Player with player id : '+livePlayer.playerId;
     }
     return false;
@@ -247,6 +273,7 @@ function startTimer(){
 
 function toggleTimerEnabled(){
     timerEnabled = !timerEnabled;
+    clearAllTimers();
     return 'Current status : Timer Enabled :'+timerEnabled;
 }
 
@@ -272,6 +299,10 @@ function getStatus(){
     }
 }
 
+function getSellingTimerValue() {
+    return timeLeftInSoldTimer;
+}
+
 module.exports = {
     userNames,
     PRIVATE_KEY,
@@ -291,5 +322,6 @@ module.exports = {
     toggleTimerEnabled,
     changeTimerWaitForSold,
     changeTimerWaitForNextPlayer,
-    getStatus
+    getStatus,
+    getSellingTimerValue
 }
