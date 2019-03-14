@@ -77,13 +77,13 @@ function clearAllTimers(){
 
 function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
-    const user = userNames[lowerNickName] || 'readOnly';
-
-    if(user ==='Parthiv'){
-        hasAuctionStarted = true;
-    }
-    var token = jwt.sign({ user: user },PRIVATE_KEY);
-    return token;
+    const user = userNames[lowerNickName] ;
+    if(user){
+        if(user ==='Parthiv'){
+            hasAuctionStarted = true;
+        }
+        var token = jwt.sign({ user: user },PRIVATE_KEY);
+        return token;
     }
     return false;
 }
