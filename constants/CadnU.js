@@ -112,7 +112,7 @@ function getLivePlayer(){
 
 function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
     if(!hasAuctionStarted){
-        return ({success:false,message:'Auction Not started yer'});
+        return ({success:false,body:'Auction Not started yer'});
     }
     var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
@@ -318,6 +318,7 @@ function changeTimerWaitForNextPlayer(newtimeWait){
 function getStatus(){
     return {
         timerEnabled,
+        hasAuctionStarted,
         timeOutToMarkPlayerSoldAfterBid:timeOutToMarkPlayerSoldAfterBid?true:false,
         timeWaitToSold,
         timeOutToGetNextPlayerAfterSold : timeOutToGetNextPlayerAfterSold?true:false,
