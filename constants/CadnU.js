@@ -10,6 +10,8 @@ const privilege = Importprivilege;
 
 var points=Object.assign({},initialPoints);
 
+var hasAuctionStarted = false;
+
 const PRIVATE_KEY = 'PRIVATE';
 
 function copyArray(o) {
@@ -75,9 +77,13 @@ function clearAllTimers(){
 
 function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
-    if(userNames[lowerNickName]){
-        var token = jwt.sign({ user: userNames[lowerNickName]||'readOnly' },PRIVATE_KEY)
-        return token;
+    const user = userNames[lowerNickName] || 'readOnly';
+
+    if(user ==='Parthiv'){
+        hasAuctionStarted = true;
+    }
+    var token = jwt.sign({ user: user },PRIVATE_KEY);
+    return token;
     }
     return false;
 }
@@ -105,6 +111,9 @@ function getLivePlayer(){
 }
 
 function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
+    if(!hasAuctionStarted){
+        return ({success:false,message:'Auction Not started yer'});
+    }
     var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
         
@@ -140,6 +149,9 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
 }
 
 function markAsSold({playerId}){
+    if(!hasAuctionStarted){
+        return ({success:false,message:'Auction Not started yer'});
+    }
     if(livePlayer.playerId == playerId) {
         if(livePlayer.bids.length>0){
             bidBy = livePlayer.bids[0].bidBy;
@@ -192,6 +204,9 @@ function getPlayersOfUser(user){
 }
 
 function bringNextPlayer() {
+    if(!hasAuctionStarted){
+        return ({success:false,message:'Auction Not started yer'});
+    }
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
         livePlayer = getNextPlayer();
         const message = `Player with id ${livePlayer.playerId} is next Player`;
@@ -241,6 +256,7 @@ function resetAuction(){
     soldPlayer = [];
     unsoldPlayer = [];
     livePlayer = getNextPlayer()
+    hasAuctionStarted = true
 }
 
 function getAllPlayers(){
