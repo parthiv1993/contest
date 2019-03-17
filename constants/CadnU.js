@@ -12,7 +12,7 @@ var points=Object.assign({},initialPoints);
 
 var hasAuctionStarted = false;
 
-const PRIVATE_KEY = 'PRIVATE';
+const PRIVATE_KEY = 'PRIVATE2';
 
 function copyArray(o) {
     var output, v, key;
