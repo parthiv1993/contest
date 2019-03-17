@@ -1,10 +1,10 @@
 module.exports={
-    Parthiv : 1000,
     Nikhil : 1000,
     Shashank : 1000,
-    Ravi :1000,
-    Vohera : 1000,
-    Prakash : 1000,
     Mantrix : 1000,
-    Vishal : 1000
+    Vishal : 1000,
+    Lucky : 1000,
+    Varun : 1000,
+    Kundan : 1000,
+    Vivek : 1000
 }

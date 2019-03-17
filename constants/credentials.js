@@ -1,11 +1,11 @@
 module.exports= {
-    hehe : 'Parthiv',
-    pokemon : 'Nikhil',
-    charsula : 'Shashank',
-    ravvi : 'Ravi',
-    aboveabhi : 'Vohera',
-    churanbaba : 'Prakash',
-    'mantrix@511': 'Mantrix',
-    vish123 : 'Vishal',
-    readonly : 'readOnly'
+    master : 'Parthiv',
+    bafna1:'Nikhil',
+    unlucky : 'Lucky',
+    charasmaal : 'Shashank',
+    bhenchod : 'Varun',
+    mantri : 'Mantrix',
+    bafna2 : 'Vishal',
+    yourname : 'Kundan',
+    fckoff : 'Vivek'
 };

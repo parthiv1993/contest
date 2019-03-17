@@ -1898,5 +1898,15 @@ module.exports=[
       "soldAt": null,
       "soldTo": null,
       "bids": []
+    },
+    {
+      "playerId": 191,
+      "name": "Sandeep Warrior ",
+      "team": "KKR",
+      "grade": "D",
+      "nationality": "Indian",
+      "soldAt": null,
+      "soldTo": null,
+      "bids": []
     }
 ]

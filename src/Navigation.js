@@ -15,14 +15,18 @@ class Navigation extends Component {
     }
 
     logOut(){
-        const userName = localStorage.getItem('user') || 'User';
-        if(userName=='Parthiv' && !this.state.isExtendedMenuOption) {
+        const userName = localStorage.getItem('user1') || 'User';
+        if((userName=='Parthiv' || userName=='Nikhil' ) && !this.state.isExtendedMenuOption) {
             this.setState({isExtendedMenuOption:true});
             setTimeout(()=>this.setState({isExtendedMenuOption:false}),10000);
         }else{
             localStorage.clear();
             window.location.reload();
         }
+    }
+
+    componentWillUnmount() {
+        localStorage.clear();
     }
 
     startAuctionHandler(){
@@ -156,7 +160,7 @@ class Navigation extends Component {
     }
 
     render() {
-        const userName = localStorage.getItem('user') || 'User';
+        const userName = localStorage.getItem('user1') || 'User';
         return(
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">{`Hi ${userName}`}</Navbar.Brand>
@@ -166,17 +170,22 @@ class Navigation extends Component {
                 <Nav.Link href="#pricing">Pricing</Nav.Link> */}
                 </Nav>
                 {
-                    userName=='Parthiv' && this.state.isExtendedMenuOption && 
+                    (userName=='Parthiv' || userName=='Nikhil') &&
+                    <Button variant="outline-info" onClick={this.timerHandler.bind(this)}>Enable / Disable Timer</Button>
+                }
+                &nbsp;
+                {
+                    (userName=='Parthiv' ) && this.state.isExtendedMenuOption && 
                     <input onChange={(e)=>{this.inputText = parseInt(e.target.value)}}></input>
                 }
                 &nbsp;
                 {
-                    userName=='Parthiv' && this.state.isExtendedMenuOption && 
+                    (userName=='Parthiv' ) && this.state.isExtendedMenuOption && 
                     this.renderOtherOptions()
                 }
                 &nbsp;
                 {
-                    userName=='Parthiv' &&
+                    (userName=='Parthiv' || userName=='Nikhil') &&
                     <Button variant="outline-info" onClick={this.startAuctionHandler.bind(this)}>Start Auction</Button>
                 }
                 &nbsp;

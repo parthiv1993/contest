@@ -41,29 +41,34 @@ var livePlayer = getNextPlayer();
 
 var timerEnabled = true;
 var timeOutToMarkPlayerSoldAfterBid = null;
-var timeWaitToSold = 45000; //45 sec
+var timeWaitToSold = 30000; //30 sec
 var timeOutToGetNextPlayerAfterSold = null;
-var timeWaitToBringNextPlayer = 60000; // 60 sec
+var timeWaitToBringNextPlayer = 15000; // 15 sec
 var timeLeftInSoldTimer = null;
 var intervalToDecreaseSoldTimer = null;
 
 function startSellingTimer(playerId){
-    clearAllTimers()
-    timeLeftInSoldTimer = timeWaitToSold
-    intervalToDecreaseSoldTimer = setInterval(()=>{
-        timeLeftInSoldTimer=timeLeftInSoldTimer-1000;
-    },1000);
-    timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>{
-        clearInterval(intervalToDecreaseSoldTimer);
-        markAsSold({playerId})
-    },timeWaitToSold);
+    clearAllTimers();
+    if(timerEnabled){
+        timeLeftInSoldTimer = timeWaitToSold
+        intervalToDecreaseSoldTimer = setInterval(()=>{
+            timeLeftInSoldTimer=timeLeftInSoldTimer-1000;
+        },1000);
+        timeOutToMarkPlayerSoldAfterBid = setTimeout(()=>{
+            clearInterval(intervalToDecreaseSoldTimer);
+            markAsSold({playerId})
+        },timeWaitToSold);
+    }
 }
 
 function startNextPlayerTimer(){
-    clearAllTimers()
-    timeOutToGetNextPlayerAfterSold = setTimeout(()=>{
-        bringNextPlayer()
-    },timeWaitToBringNextPlayer);
+    clearAllTimers();
+    clearAllTimers();
+    if(timerEnabled){
+        timeOutToGetNextPlayerAfterSold = setTimeout(()=>{
+            bringNextPlayer()
+        },timeWaitToBringNextPlayer);
+    }
 }
 
 function clearAllTimers(){
@@ -237,7 +242,7 @@ function resetAuction(){
     BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
     CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
     DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
-    points = initialPoints;
+    points = Object.assign({},initialPoints);
     soldPlayer = [];
     unsoldPlayer = [];
     livePlayer = getNextPlayer()

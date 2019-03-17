@@ -68,7 +68,7 @@ class AllPlayerDetails extends React.Component{
             const doc = new jsPDF();
             const filteredPlayers = this.getRows(this.state.dPlayers, this.state.filters);
             doc.autoTable({
-                head: [['ID','Player Name','Team','Sold At','Sold To','Grade','Nationality']],
+                head: [['ID','Player Name','Team','Sold At','Sold To','Grade','Nationality','\r\n']],
                 body:filteredPlayers.map(player=>
                     [
                         player.playerId,
@@ -82,9 +82,45 @@ class AllPlayerDetails extends React.Component{
                 )
             });
             doc.save('summary.pdf');
+            var CsvString = "Player Id,Name,Team,Sold At,Sold To,Grade,Nationality,Bids\r\n";
+            filteredPlayers.forEach(function(RowItem, RowIndex) {
+                for(var key in RowItem){
+                // RowItem.forEach(function(ColItem, ColIndex) {
+                    CsvString += JSON.stringify(RowItem[key]).replace(/\,/g,'') + ',';
+                }
+                CsvString += "\r\n";
+            });
+            CsvString = "data:application/csv," + encodeURIComponent(CsvString);
+            var x = document.createElement("A");
+            x.setAttribute("href", CsvString );
+            x.setAttribute("download","somedata.csv");
+            document.body.appendChild(x);
+            x.click();
         }
         catch(e){
+            console.log(e);
+        }
+    }
 
+    downloadAsExcell(){
+        try{
+            const filteredPlayers = this.getRows(this.state.dPlayers, this.state.filters);
+            var CsvString = "Player Id,Name,Team,Sold At,Sold To,Grade,Nationality,Bids\r\n";
+            filteredPlayers.forEach(function(RowItem) {
+                for(var key in RowItem){
+                    CsvString += JSON.stringify(RowItem[key]).replace(/\,/g,'') + ',';
+                }
+                CsvString += "\r\n";
+            });
+            CsvString = "data:application/csv," + encodeURIComponent(CsvString);
+            var x = document.createElement("A");
+            x.setAttribute("href", CsvString );
+            x.setAttribute("download","auction2.csv");
+            document.body.appendChild(x);
+            x.click();
+        }
+        catch(e){
+            console.log(e);
         }
     }
 
@@ -97,7 +133,7 @@ class AllPlayerDetails extends React.Component{
         Object.keys(filters).map(filterKey=>{
             const term = filters[filterKey].filterTerm;
             filteredRows = filteredRows.filter((value)=>{
-                return value[filterKey] && (value[filterKey].toString()).indexOf(term)>-1
+                return value[filterKey] && (value[filterKey].toString().toLowerCase()).indexOf(term.toLowerCase())>-1
             });
         })
         return filteredRows;
@@ -145,7 +181,11 @@ class AllPlayerDetails extends React.Component{
                     </h2>
                     &nbsp;
                     <Button variant={'info'} style={{float:'right'}} onClick={this.download.bind(this)}>
-                        Download Summary
+                        Download PDF
+                    </Button>
+                    &nbsp;<span style={{float:'right'}}>&nbsp;</span>
+                    <Button variant={'info'} style={{float:'right'}} onClick={this.downloadAsExcell.bind(this)}>
+                        Download Excell
                     </Button>
                     <span style={{float:'right'}}>&nbsp;</span>
                     <Button variant={'info'} style={{float:'right'}} onClick={this.refreshDataHandler.bind(this)}>

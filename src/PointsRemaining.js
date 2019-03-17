@@ -49,7 +49,7 @@ class PointsRemaining extends React.Component{
 
     render(){
         const points =this.state.points;
-        const user = localStorage.getItem('user');
+        const user = localStorage.getItem('user1');
         if(points ){
             return(
                 <Card>
