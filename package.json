@@ -23,7 +23,7 @@
     "socket.io": "^2.2.0"
   },
   "scripts": {
-    "start": "npm run build_UI && node server.js",
+    "start": "node server.js",
     "start_UI": "react-scripts start",
     "build_UI": "react-scripts build",
     "test": "react-scripts test",
