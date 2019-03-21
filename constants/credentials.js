@@ -1,11 +1,10 @@
 module.exports= {
     master : 'Parthiv',
-    bafna1:'Nikhil',
-    unlucky : 'Lucky',
-    charasmaal : 'Shashank',
-    bhenchod : 'Varun',
-    mantri : 'Mantrix',
+    bafna1: 'Nikhil',
     bafna2 : 'Vishal',
-    yourname : 'Kundan',
-    fckoff : 'Vivek'
+    baba : 'Prakash',
+    tripcompile : 'Shashank',
+    rohan123 : 'Rohan',
+    batla : 'Jash',
+    mantri : 'Mantri',
 };

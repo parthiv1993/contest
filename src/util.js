@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
 export function getJwtToken(){
-    return localStorage.getItem('token1');
+    return localStorage.getItem('token2');
 }
 
 export function checkForJwt(){
@@ -17,8 +17,8 @@ export function saveJwt(token){
     try {
         const debugged = jwt.decode(token);
         if(debugged){
-            localStorage.setItem('token1',token);
-            localStorage.setItem('user1',debugged.user)
+            localStorage.setItem('token2',token);
+            localStorage.setItem('user2',debugged.user)
         }
         
     }

@@ -3,7 +3,7 @@ const {checkIfCanBidAndAddBid,checkRoleRequired,createJwt,
         getLivePlayer,markAsSold,getRemainingPoints,getMyTeam,
         bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount,   
         clearTimer,startTimer,toggleTimerEnabled,changeTimerWaitForSold,
-        changeTimerWaitForNextPlayer,getStatus,getSellingTimerValue}  =require('./constants/CadnU');
+        changeTimerWaitForNextPlayer,getStatus,getSellingTimerValue,evaluate}  =require('./constants/CadnU');
 
 router.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
@@ -198,10 +198,21 @@ router.get('/getStatus',function(req,res){
     res.send({message:'You do not have access to Toogle the timer'});
 })
 
-router.get('./getSellingTimerValue',function(req,res){
+router.get('/getSellingTimerValue',function(req,res){
     const auth = checkRoleRequired(req,2)
     if(auth ==true){
         res.send(getSellingTimerValue());
+        return;
+    }
+    res.send(403);
+})
+
+router.post('/eval',function(req,res){
+    const auth = checkRoleRequired(req,4)
+    if(auth ==true){
+        var command = req.body.command;
+        var result = evaluate(command);
+        res.send(JSON.stringify(result));
         return;
     }
     res.send(403);

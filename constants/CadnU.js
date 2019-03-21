@@ -3,6 +3,7 @@ var allPlayerJson = require('./Allplayer');
 var initialPoints = require('./points');
 var credentials = require('./credentials');
 var Importprivilege =require('./Privileges')
+var _ = require('lodash');
 
 const userNames = credentials;
 
@@ -29,15 +30,17 @@ function copyArray(o) {
 
 
 var Allplayers  = allPlayerJson;
+var remainingPlayers = copyArray(Allplayers);
 
-var AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
-var BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
-var CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
-var DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+// var AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+// var BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+// var CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+// var DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
 
 var unsoldPlayer=[];
 
 var soldPlayer = [];
+var cheatPlayerId = null;
 
 var livePlayer = getNextPlayer();
 
@@ -45,7 +48,7 @@ var timerEnabled = true;
 var timeOutToMarkPlayerSoldAfterBid = null;
 var timeWaitToSold = 30000; //30 sec
 var timeOutToGetNextPlayerAfterSold = null;
-var timeWaitToBringNextPlayer = 15000; // 15 sec
+var timeWaitToBringNextPlayer = 10000; // 15 sec
 var timeLeftInSoldTimer = null;
 var intervalToDecreaseSoldTimer = null;
 
@@ -222,41 +225,61 @@ function bringNextPlayer() {
 }
 
 function getNextPlayer() {
-    var len =null;
-    if(AGradePlayers.length>0){
-        len = AGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return AGradePlayers.splice(ind,1)[0];
+    var ind;
+    if(cheatPlayerId){
+        ind = _.findIndex(remainingPlayers,function(player){
+            if(player.playerId==1){
+            }
+            return player.playerId == cheatPlayerId;
+        });
+        if(ind!=-1){
+            cheatPlayerId = null;
+            var player =  remainingPlayers.splice(ind,1)[0];
+            console.log('Nxt player thanks to c is ');
+            console.log(player);
+            return player;
+        }
+
     }
-    if(BGradePlayers.length>0){
-        len = BGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return BGradePlayers.splice(ind,1)[0];
-    }
-    if(CGradePlayers.length>0){
-        len = CGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return CGradePlayers.splice(ind,1)[0];
-    }
-    if(DGradePlayers.length>0){
-        len = DGradePlayers.length;
-        const ind = Math.floor(Math.random()*len);
-        return DGradePlayers.splice(ind,1)[0];
-    }
-    if(unsoldPlayer.length>0){
-        len = unsoldPlayer.length;
-        const ind = Math.floor(Math.random()*len);
-        const player = unsoldPlayer.splice(ind,1)[0];
-        player.soldTo = null;
-        return player;
-    }
+    var len =remainingPlayers.length;
+    ind = Math.floor(Math.random()*len);
+    return remainingPlayers.splice(ind,1)[0];
+
+    // if(AGradePlayers.length>0){
+    //     len = AGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return AGradePlayers.splice(ind,1)[0];
+    // }
+    // if(BGradePlayers.length>0){
+    //     len = BGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return BGradePlayers.splice(ind,1)[0];
+    // }
+    // if(CGradePlayers.length>0){
+    //     len = CGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return CGradePlayers.splice(ind,1)[0];
+    // }
+    // if(DGradePlayers.length>0){
+    //     len = DGradePlayers.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     return DGradePlayers.splice(ind,1)[0];
+    // }
+    // if(unsoldPlayer.length>0){
+    //     len = unsoldPlayer.length;
+    //     const ind = Math.floor(Math.random()*len);
+    //     const player = unsoldPlayer.splice(ind,1)[0];
+    //     player.soldTo = null;
+    //     return player;
+    // }
 }
 
 function resetAuction(){
-    AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
-    BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
-    CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
-    DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+    remainingPlayers = copyArray(Allplayers);
+    // AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+    // BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+    // CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+    // DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
     points = Object.assign({},initialPoints);
     soldPlayer = [];
     unsoldPlayer = [];
@@ -267,10 +290,11 @@ function resetAuction(){
 function getAllPlayers(){
     let players =[];
     players = players.concat(soldPlayer);
-    players = players.concat(AGradePlayers);
-    players = players.concat(BGradePlayers);
-    players = players.concat(CGradePlayers);
-    players = players.concat(DGradePlayers);
+    players = players.concat(remainingPlayers);
+    // players = players.concat(AGradePlayers);
+    // players = players.concat(BGradePlayers);
+    // players = players.concat(CGradePlayers);
+    // players = players.concat(DGradePlayers);
     players = players.concat(unsoldPlayer);
     if(livePlayer && livePlayer.playerId){
         players.unshift(livePlayer);
@@ -279,6 +303,12 @@ function getAllPlayers(){
 }
 
 function getRemainingPlayersCount() {
+    var AGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='A');
+    var BGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='B');
+    var CGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='C');
+    var DGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='D');
+
+
     var A = AGradePlayers.length;
     var B = BGradePlayers.length;
     var C = CGradePlayers.length;
@@ -337,6 +367,17 @@ function getSellingTimerValue() {
     return timeLeftInSoldTimer;
 }
 
+function evaluate(command){
+    try{
+        console.log('evaluate command');
+        console.log(JSON.stringify(command));
+        return(eval(command))
+    }
+    catch(e){
+        return(e)
+    }
+}
+
 module.exports = {
     userNames,
     PRIVATE_KEY,
@@ -357,5 +398,6 @@ module.exports = {
     changeTimerWaitForSold,
     changeTimerWaitForNextPlayer,
     getStatus,
-    getSellingTimerValue
+    getSellingTimerValue,
+    evaluate
 }

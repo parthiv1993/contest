@@ -57,7 +57,7 @@ class LiveAuction extends Component {
 
     bid(){
         if(this.state.bidAmt && this.state.bidAmt>0){
-            const userName = localStorage.getItem('user1') || 'User';
+            const userName = localStorage.getItem('user2') || 'User';
             const playerId =this.state.currentAuctionInfo.playerId;
             this.doBidRequest(playerId,this.state.bidAmt,userName).then(
                 (res)=>{
@@ -118,7 +118,7 @@ class LiveAuction extends Component {
     }
 
     render() {
-        const userName = localStorage.getItem('user1') || 'User';
+        const userName = localStorage.getItem('user2') || 'User';
         const currentPlayer = this.state.currentAuctionInfo;
         const bidsPresent = currentPlayer && currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
         const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';

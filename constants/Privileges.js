@@ -1,6 +1,6 @@
 module.exports={
     'Parthiv' : 4,
-    'Nikhil' : 4, 
+    'Nikhil' : 3, 
     'Shashank' : 2,
     'Ravi' : 2,
     'Vohera' : 2,
@@ -9,7 +9,7 @@ module.exports={
     'Vishal' : 2,
     'Lucky':2,
     'Kundan':2,
-    'Vivek':2,
+    'Jash':2,
     'Varun':2,
     'readOnly' : 1
 }

@@ -44,7 +44,7 @@ class PlayerRemaining extends React.Component{
 
     render(){
         const count = this.state.count;
-        const user = localStorage.getItem('user1');
+        const user = localStorage.getItem('user2');
         if(count){
             return(
                 <Card>

@@ -15,7 +15,7 @@ class Navigation extends Component {
     }
 
     logOut(){
-        const userName = localStorage.getItem('user1') || 'User';
+        const userName = localStorage.getItem('user2') || 'User';
         if((userName=='Parthiv' || userName=='Nikhil' ) && !this.state.isExtendedMenuOption) {
             this.setState({isExtendedMenuOption:true});
             setTimeout(()=>this.setState({isExtendedMenuOption:false}),10000);
@@ -160,7 +160,7 @@ class Navigation extends Component {
     }
 
     render() {
-        const userName = localStorage.getItem('user1') || 'User';
+        const userName = localStorage.getItem('user2') || 'User';
         return(
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">{`Hi ${userName}`}</Navbar.Brand>
