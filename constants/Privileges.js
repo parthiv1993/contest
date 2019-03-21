@@ -5,7 +5,7 @@ module.exports={
     'Ravi' : 2,
     'Vohera' : 2,
     'Prakash':2,
-    'Mantrix':2,
+    'Mantri':2,
     'Vishal' : 2,
     'Lucky':2,
     'Kundan':2,
