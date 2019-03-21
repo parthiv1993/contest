@@ -10,6 +10,7 @@ module.exports={
     'Lucky':2,
     'Kundan':2,
     'Jash':2,
+    'Rohan':2,
     'Varun':2,
     'readOnly' : 1
 }
