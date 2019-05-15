@@ -317,8 +317,9 @@ function getRemainingPlayersCount() {
 
 
     var Unsold = unsoldPlayer.length;
-    var Total_Remaining = A+B+C+D+Unsold;
     var Sold_Players = soldPlayer.length;
+    var Total_Remaining = Allplayers.length-Sold_Players-Unsold;
+
     return {
         Sold_Players,
         Afghanistan : Afghanistan.length,
