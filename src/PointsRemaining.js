@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Axios from'axios';
-import { getJwtToken, getHeaderObject } from './util';
+import { getJwtToken, getHeaderObject ,USER_KEY} from './util';
 import Constants from './Constants';
 import { Table, Card ,Button} from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -49,7 +49,7 @@ class PointsRemaining extends React.Component{
 
     render(){
         const points =this.state.points;
-        const user = localStorage.getItem('user2');
+        const user = localStorage.getItem([USER_KEY]);
         if(points ){
             return(
                 <Card>

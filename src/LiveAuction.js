@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Constants from './Constants';
 import { Button, Row, Col, Table ,Card} from 'react-bootstrap';
 import Axios from 'axios';
-import { getJwtToken, getHeaderObject } from './util';
+import { getJwtToken, getHeaderObject, USER_KEY } from './util';
 import _ from 'lodash';
 import { toast } from 'react-toastify';
 
@@ -41,9 +41,9 @@ class LiveAuction extends Component {
         )
     }
 
-    startAuction(e){
-        e.preventDefault();
-    }
+    // startAuction(e){
+    //     e.preventDefault();
+    // }
 
     roundOff(amt){
         const bidAmt = Math.ceil(parseInt(amt.target.value)/5)*5;
@@ -57,7 +57,7 @@ class LiveAuction extends Component {
 
     bid(){
         if(this.state.bidAmt && this.state.bidAmt>0){
-            const userName = localStorage.getItem('user2') || 'User';
+            const userName = localStorage.getItem([USER_KEY]) || 'User';
             const playerId =this.state.currentAuctionInfo.playerId;
             this.doBidRequest(playerId,this.state.bidAmt,userName).then(
                 (res)=>{
@@ -118,7 +118,7 @@ class LiveAuction extends Component {
     }
 
     render() {
-        const userName = localStorage.getItem('user2') || 'User';
+        const userName = localStorage.getItem([USER_KEY]) || 'User';
         const currentPlayer = this.state.currentAuctionInfo;
         const bidsPresent = currentPlayer && currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
         const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';
@@ -140,12 +140,12 @@ class LiveAuction extends Component {
                             <Col sm={12}>
                                 {`Team : ${currentPlayer.team}`}
                             </Col>
-                            <Col sm={12}>
+                            {/* <Col sm={12}>
                                 {`Grade : ${currentPlayer.grade}`}
-                            </Col>
-                            <Col sm={12}>
+                            </Col> */}
+                            {/* <Col sm={12}>
                                 {`Nationality : ${currentPlayer.nationality}`}
-                            </Col>
+                            </Col> */}
                             <Col sm={12}> 
                                 {`Time Left : ${currentPlayer.timeLeft ? currentPlayer.timeLeft/1000-3: 'null'} Seconds`}
                             </Col>

@@ -303,21 +303,36 @@ function getAllPlayers(){
 }
 
 function getRemainingPlayersCount() {
-    var AGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='A');
-    var BGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='B');
-    var CGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='C');
-    var DGradePlayers = copyArray(remainingPlayers).filter((player)=> player.grade=='D');
+    var Australia = copyArray(remainingPlayers).filter((player)=> player.team=='Australia');
+    var India = copyArray(remainingPlayers).filter((player)=> player.team=='India');
+    var Pakistan = copyArray(remainingPlayers).filter((player)=> player.team=='Pakistan');
+    var England = copyArray(remainingPlayers).filter((player)=> player.team=='England');
+    var Afghanistan = copyArray(remainingPlayers).filter((player)=> player.team=='Afghanistan');
+    var Bangladesh = copyArray(remainingPlayers).filter((player)=> player.team=='Bangladesh');
+    var NewZealand = copyArray(remainingPlayers).filter((player)=> player.team=='New Zealand');
+    var SouthAfrica = copyArray(remainingPlayers).filter((player)=> player.team=='South Africa');
+    var SriLanka = copyArray(remainingPlayers).filter((player)=> player.team=='Sri Lanka');
+    var WestIndies = copyArray(remainingPlayers).filter((player)=> player.grade=='West Indies');
 
 
-    var A = AGradePlayers.length;
-    var B = BGradePlayers.length;
-    var C = CGradePlayers.length;
-    var D = DGradePlayers.length;
+
     var Unsold = unsoldPlayer.length;
     var Total_Remaining = A+B+C+D+Unsold;
     var Sold_Players = soldPlayer.length;
     return {
-        Sold_Players,A,B,C,D, Unsold,Total_Remaining
+        Sold_Players,
+        Afghanistan : Afghanistan.length,
+        Australia : Australia.length,
+        Bangladesh : Bangladesh.length,
+        England : England.length,
+        India : India.length,
+        NewZealand : NewZealand.length,
+        Pakistan : Pakistan.length,
+        SouthAfrica : SouthAfrica.length,
+        SriLanka : SriLanka.length,
+        WestIndies : WestIndies.length,
+        Unsold,
+        Total_Remaining
     }
 }
 

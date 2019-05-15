@@ -47,6 +47,39 @@ class YourTeam extends React.Component{
         this.getYourTeam();
     }
 
+
+    getTeamColour(team){
+        const obj ={
+            India : '#4286f4',
+            Pakistan : '#6fce6f',
+            Australia : '#eded25',
+            Afghanistan : '#1455a9',
+            'South Africa' : '#82bd63',
+            'West Indies' : '#932a52',
+            'New Zealand': '#080b0e',
+            Bangladesh :'#82bd63',
+            'Sri Lanka':'#0061f6',
+            England : '#3b5667'
+        }
+        return obj[team];
+    }
+
+    getTeamTextColor(team){
+        const obj = {
+            India : 'White',
+            Pakistan : 'White',
+            Australia : 'limegreen',
+            Afghanistan : 'Black',
+            'South Africa' : 'Yellow',
+            'West Indies' : 'White',
+            'New Zealand': 'White',
+            Bangladesh :'#174400',
+            'Sri Lanka':'Yellow',
+            England : 'White'
+        }
+        return obj[team];
+    }
+
     render(){
         const team = this.state.team;
         if(team){
@@ -57,7 +90,7 @@ class YourTeam extends React.Component{
                         <Button variant="dark" size='sm' style={{float:'right'}} onClick={this.onRefreshHandler.bind(this)}>Refresh</Button>
                     </Card.Header>
                     <Card.Body>
-                        <div className='legend'>
+                        {/* <div className='legend'>
                             <ul style={ {listStyle: 'none' }}>
                                 <li style={{ float: 'left',marginRight: '10px' }}>
                                     <span style={{ border: '1px solid #ccc',float: 'left', width: '24px', height: '24px', margin: '2px',backgroundColor:'cornflowerblue' }}>
@@ -70,7 +103,7 @@ class YourTeam extends React.Component{
                                      <span>Overseas</span>
                                 </li>
                             </ul>
-                        </div>
+                        </div> */}
                     <Table bordered='true' hover='true' size="sm">
                             <thead>
                                 <tr>
@@ -92,7 +125,7 @@ class YourTeam extends React.Component{
                                 {
                                     team.map(
                                         (player,index)=>
-                                            <tr key={index} style={{backgroundColor:player.nationality =='Indian'?'cornflowerblue':'palevioletred'}}>
+                                            <tr key={index}>
                                                 <td>
                                                     {index+1}
                                                 </td>
@@ -102,7 +135,7 @@ class YourTeam extends React.Component{
                                                 <td>
                                                     {player.soldAt}
                                                 </td>
-                                                <td>
+                                                <td style={{backgroundColor:`${this.getTeamColour(player.team)}`,color:`${this.getTeamTextColor(player.team)}`}}>
                                                     {player.team}
                                                 </td>
                                             </tr>

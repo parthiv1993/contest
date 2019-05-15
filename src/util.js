@@ -1,7 +1,11 @@
 import jwt from 'jsonwebtoken';
 
+export const USER_KEY = 'WCAuction1User';
+export const TOKEN_KEY = 'WCAuction1Token';
+
+
 export function getJwtToken(){
-    return localStorage.getItem('token2');
+    return localStorage.getItem([TOKEN_KEY]);
 }
 
 export function checkForJwt(){
@@ -17,8 +21,8 @@ export function saveJwt(token){
     try {
         const debugged = jwt.decode(token);
         if(debugged){
-            localStorage.setItem('token2',token);
-            localStorage.setItem('user2',debugged.user)
+            localStorage.setItem([TOKEN_KEY],token);
+            localStorage.setItem([USER_KEY],debugged.user)
         }
         
     }
