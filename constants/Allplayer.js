@@ -1208,7 +1208,7 @@ module.exports = [{
   },
   {
     "playerId": 152,
-    "name": "Jofra Archer",
+    "name": "Jofra Archer(ns)",
     "team": "England",
     "soldAt": null,
     "soldTo": null,
@@ -1224,7 +1224,7 @@ module.exports = [{
   },
   {
     "playerId": 154,
-    "name": "Ambati Rayudu",
+    "name": "Ambati Rayudu(ns)",
     "team": "India",
     "soldAt": null,
     "soldTo": null,
