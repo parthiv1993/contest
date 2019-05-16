@@ -312,7 +312,7 @@ function getRemainingPlayersCount() {
     var NewZealand = copyArray(remainingPlayers).filter((player)=> player.team=='New Zealand');
     var SouthAfrica = copyArray(remainingPlayers).filter((player)=> player.team=='South Africa');
     var SriLanka = copyArray(remainingPlayers).filter((player)=> player.team=='Sri Lanka');
-    var WestIndies = copyArray(remainingPlayers).filter((player)=> player.grade=='West Indies');
+    var WestIndies = copyArray(remainingPlayers).filter((player)=> player.team=='West Indies');
 
 
 
