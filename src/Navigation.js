@@ -207,7 +207,7 @@ class Navigation extends Component {
                      (userName=='Parthiv') &&
                      <Button variant="outline-info" onClick={()=>{
                         //eslint-disable-next-line
-                        if(confirm("You are about to get test. Are you Sure?")){
+                        if(!confirm("You are about to get test. Are you Sure?")){
                             this.tryTest();
                         }
                     }   
