@@ -6,6 +6,14 @@ import { getJwtToken, getHeaderObject, USER_KEY } from './util';
 import { toast } from 'react-toastify';
 import './navigation.css'
 
+const ButtonWithWarning= (props)=> <Button variant="outline-info" onClick={()=>{
+    //eslint-disable-next-line
+    if(confirm(props.warning)){
+        props.handler();
+    }
+}   
+}>{props.buttonName}</Button>
+
 class Navigation extends Component {
     constructor(props){
         super(props);
@@ -15,14 +23,10 @@ class Navigation extends Component {
     }
 
     logOut(){
-        const userName = localStorage.getItem([USER_KEY]) || 'User';
-        if((userName=='Parthiv' || userName=='Nikhil' ) && !this.state.isExtendedMenuOption) {
-            this.setState({isExtendedMenuOption:true});
-            setTimeout(()=>this.setState({isExtendedMenuOption:false}),10000);
-        }else{
+        // const userName = localStorage.getItem([USER_KEY]) || 'User';
+  
             localStorage.clear();
             window.location.reload();
-        }
     }
 
     componentWillUnmount() {
@@ -125,75 +129,101 @@ class Navigation extends Component {
         )
     }
 
-    renderOtherOptions(){
-        return (
-            <div>
-                
-                <Dropdown>
-                    <Dropdown.Toggle variant="outline-info" id="dropdown-basic">
-                        Other Options
-                    </Dropdown.Toggle>
+    tryTest(){
+        const payload = {
+            command : `cheatPlayerId = ${this.inputText}`
+        };
+        Axios.post(Constants.BASE_URL +'/eval',payload,getHeaderObject()).then(
+            (res)=>{
+                toast.success(res.data);
+            },(err)=>{
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item  >
-                            <Button size="sm" variant="outline-info" onClick={this.pauseTimerNow.bind(this)}>Pause Timer now</Button>
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                            <Button size="sm" variant="outline-info" onClick={this.startTimerNow.bind(this)}>Start Timer for current player</Button>
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                            <Button size="sm" variant="outline-info" onClick={this.timerHandler.bind(this)}>Enable / Disable Timer</Button>
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                                <Button size="sm" variant="outline-info" onClick={this.changeTimerWaitForSold.bind(this)}>Change Time to Sold</Button>
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                                <Button size="sm" variant="outline-info" onClick={this.changeTimerWaitForNextPlayer.bind(this)}>Change Time to Next player</Button>
-                        </Dropdown.Item>
-                        <Dropdown.Item>
-                                <Button size="sm" variant="outline-info" onClick={this.getStatus.bind(this)}>Get Status</Button>
-                        </Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-            </div>
-        ) 
+            }
+        )
     }
+
 
     render() {
         const userName = localStorage.getItem([USER_KEY]) || 'User';
-        return(
-            <Navbar bg="dark" variant="dark">
+
+        const originalNavBar = <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">{`Hi ${userName}`}</Navbar.Brand>
-                <Nav className="mr-auto">
-                {/* <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Features</Nav.Link>
-                <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-                </Nav>
+                <Nav className="mr-auto"></Nav>
+                <Button variant="outline-info" onClick={this.logOut.bind(this)}>Log Out</Button>
+            </Navbar>;
+
+        const additionalOptions = <Navbar bg="dark" variant="dark">
                 {
                     (userName=='Parthiv' || userName=='Nikhil') &&
-                    <Button variant="outline-info" onClick={this.timerHandler.bind(this)}>Enable / Disable Timer</Button>
+                    <ButtonWithWarning
+                            warning="You are about to restart the auction. Are you Sure?"
+                            handler={this.startAuctionHandler.bind(this)}
+                            buttonName = {'Start Auction'}
+                    />
                 }
                 &nbsp;
                 {
-                    (userName=='Parthiv' ) && this.state.isExtendedMenuOption && 
+                    (userName=='Parthiv' || userName=='Nikhil') &&
+                    <ButtonWithWarning
+                            warning="You are about to toggle the timer. Are you Sure?"
+                            handler={this.timerHandler.bind(this)}
+                            buttonName = {'Enable / Disable Timer'}
+                    />
+                }
+                &nbsp;
+                {
+                    (userName=='Parthiv') &&
                     <input onChange={(e)=>{this.inputText = parseInt(e.target.value)}}></input>
                 }
                 &nbsp;
                 {
-                    (userName=='Parthiv' ) && this.state.isExtendedMenuOption && 
-                    this.renderOtherOptions()
+                     (userName=='Parthiv') &&
+                     <ButtonWithWarning
+                            warning="You are Change Timer for marking player sold. Are you Sure?"
+                            handler={this.changeTimerWaitForSold.bind(this)}
+                            buttonName = {'Change Time to Sold'}
+                    />
                 }
                 &nbsp;
                 {
-                    (userName=='Parthiv' || userName=='Nikhil') &&
-                    <Button variant="outline-info" onClick={this.startAuctionHandler.bind(this)}>Start Auction</Button>
+                     (userName=='Parthiv') &&
+                     <ButtonWithWarning
+                            warning="You are Change Timer for getiing next player. Are you Sure?"
+                            handler={this.changeTimerWaitForNextPlayer.bind(this)}
+                            buttonName = {'Change Time to Next player'}
+                    />
                 }
                 &nbsp;
-
-                
-                <Button variant="outline-info" onClick={this.logOut.bind(this)}>Log Out</Button>
-            </Navbar>
-                    
+                {
+                     (userName=='Parthiv') &&
+                     <ButtonWithWarning
+                            warning="You are about to get status. Are you Sure?"
+                            handler={this.getStatus.bind(this)}
+                            buttonName = {'Get Status'}
+                    />
+                }
+                &nbsp;
+                {
+                     (userName=='Parthiv') &&
+                     <Button variant="outline-info" onClick={()=>{
+                        //eslint-disable-next-line
+                        if(confirm("You are about to get test. Are you Sure?")){
+                            this.tryTest();
+                        }
+                    }   
+                    }>{'Test'}</Button>
+                    //  <ButtonWithWarning
+                    //         warning="You are about to get test. Are you Sure?"
+                    //         handler={this.tryTest.bind(this)}
+                    //         buttonName = {'Test'}
+                    // />
+                }
+            </Navbar>;
+        return(
+            [
+                originalNavBar,
+                additionalOptions,
+            ]     
         )
     }
 }

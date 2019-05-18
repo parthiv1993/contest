@@ -1193,7 +1193,7 @@ module.exports = [{
   {
     "playerId": 150,
     "name": "Mujeeb Ur Rahman",
-    "team": "Afghansitan",
+    "team": "Afghanistan",
     "soldAt": null,
     "soldTo": null,
     "bids": []
@@ -1240,7 +1240,7 @@ module.exports = [{
   },
   {
     "playerId": 156,
-    "name": "Mohammad Amit(ns)",
+    "name": "Mohammad Amir(ns)",
     "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
@@ -1250,6 +1250,20 @@ module.exports = [{
     "playerId": 157,
     "name": "Sunil Ambris(ns)",
     "team": "West Indies",
+    "soldAt": null,
+    "soldTo": null,
+    "bids": []
+  },{
+    "playerId": 158,
+    "name": "Asif Ali(ns)",
+    "team": "Pakistan",
+    "soldAt": null,
+    "soldTo": null,
+    "bids": []
+  },{
+    "playerId": 159,
+    "name": "Chris Morris(ns)",
+    "team": "South Africa",
     "soldAt": null,
     "soldTo": null,
     "bids": []

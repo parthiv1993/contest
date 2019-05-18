@@ -4,7 +4,7 @@ module.exports={
     Vishal : 1000,
     Prakash : 1000,
     Shashank : 1000,
-    Rohan : 1000,
+    Keyur : 1000,
     Mantri : 1000,
     Jash : 1000
 }

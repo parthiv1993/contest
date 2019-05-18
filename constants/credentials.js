@@ -3,8 +3,8 @@ module.exports= {
     bafna1: 'Nikhil',
     bafna2 : 'Vishal',
     baba : 'Prakash',
-    tripcompile : 'Shashank',
-    rohan123 : 'Rohan',
+    charsi : 'Shashank',
+    rukey : 'Keyur',
     batla : 'Jash',
     mantri : 'Mantri',
 };
