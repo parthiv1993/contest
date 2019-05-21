@@ -144,7 +144,7 @@ module.exports = [{
   },
   {
     "playerId": 19,
-    "name": "Abid Ali",
+    "name": "Asif Ali",
     "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
@@ -208,7 +208,7 @@ module.exports = [{
   },
   {
     "playerId": 27,
-    "name": "Faheem Ashraf",
+    "name": "Wahab Riaz",
     "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
@@ -217,14 +217,6 @@ module.exports = [{
   {
     "playerId": 28,
     "name": "Shaheen Shah Afridi",
-    "team": "Pakistan",
-    "soldAt": null,
-    "soldTo": null,
-    "bids": []
-  },
-  {
-    "playerId": 29,
-    "name": "Junaid Khan",
     "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
@@ -279,22 +271,6 @@ module.exports = [{
     "bids": []
   },
   {
-    "playerId": 36,
-    "name": "Joe Denly",
-    "team": "England",
-    "soldAt": null,
-    "soldTo": null,
-    "bids": []
-  },
-  {
-    "playerId": 37,
-    "name": "Alex Hales",
-    "team": "England",
-    "soldAt": null,
-    "soldTo": null,
-    "bids": []
-  },
-  {
     "playerId": 38,
     "name": "Liam Plunkett",
     "team": "England",
@@ -329,14 +305,6 @@ module.exports = [{
   {
     "playerId": 42,
     "name": "Ben Stokes",
-    "team": "England",
-    "soldAt": null,
-    "soldTo": null,
-    "bids": []
-  },
-  {
-    "playerId": 43,
-    "name": "David Willey",
     "team": "England",
     "soldAt": null,
     "soldTo": null,
@@ -927,14 +895,6 @@ module.exports = [{
     "bids": []
   },
   {
-    "playerId": 117,
-    "name": "Anrich Nortje",
-    "team": "South Africa",
-    "soldAt": null,
-    "soldTo": null,
-    "bids": []
-  },
-  {
     "playerId": 118,
     "name": "Imran Tahir",
     "team": "South Africa",
@@ -1208,7 +1168,7 @@ module.exports = [{
   },
   {
     "playerId": 152,
-    "name": "Jofra Archer(ns)",
+    "name": "Jofra Archer",
     "team": "England",
     "soldAt": null,
     "soldTo": null,
@@ -1216,7 +1176,7 @@ module.exports = [{
   },
   {
     "playerId": 153,
-    "name": "Liam Dawson(ns)",
+    "name": "Liam Dawson",
     "team": "England",
     "soldAt": null,
     "soldTo": null,
@@ -1232,7 +1192,7 @@ module.exports = [{
   },
   {
     "playerId": 155,
-    "name": "James Vince(ns)",
+    "name": "James Vince",
     "team": "England",
     "soldAt": null,
     "soldTo": null,
@@ -1240,7 +1200,7 @@ module.exports = [{
   },
   {
     "playerId": 156,
-    "name": "Mohammad Amir(ns)",
+    "name": "Mohammad Amir",
     "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
@@ -1254,16 +1214,30 @@ module.exports = [{
     "soldTo": null,
     "bids": []
   },{
-    "playerId": 158,
-    "name": "Asif Ali(ns)",
-    "team": "Pakistan",
+    "playerId": 159,
+    "name": "Chris Morris",
+    "team": "South Africa",
     "soldAt": null,
     "soldTo": null,
     "bids": []
   },{
-    "playerId": 159,
-    "name": "Chris Morris(ns)",
-    "team": "South Africa",
+    "playerId": 160,
+    "name": "Kerion Pollard(ns)",
+    "team": "West Indies",
+    "soldAt": null,
+    "soldTo": null,
+    "bids": []
+  },{
+    "playerId": 29,
+    "name": "DJ Bravo(ns)",
+    "team": "West Indies",
+    "soldAt": null,
+    "soldTo": null,
+    "bids": []
+  },{
+    "playerId": 29,
+    "name": "",
+    "team": "Pakistan",
     "soldAt": null,
     "soldTo": null,
     "bids": []

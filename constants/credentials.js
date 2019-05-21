@@ -1,10 +1,15 @@
 module.exports= {
-    master : 'Parthiv',
-    nikhil1: 'Nikhil',
+    master2 : 'Parthiv',
+    nikhil2: 'Nikhil',
     bafna2 : 'Vishal',
-    baba : 'Prakash',
-    charsi : 'Shashank',
-    ruyek : 'Keyur',
-    batla : 'Jash',
-    mantri : 'Mantri',
+    baba2 : 'Prakash',
+    charsi2 : 'Shashank',
+    kyr2 : 'Keyur',
+    batla2 : 'Jash',
+    mntr2 : 'Mantri',
+    shrd2 : 'Sharad',
+    daniya2 : 'Jay',
+    rhn2 : 'Rohan',
+    jaat2 : 'Ravi',
+    etra2 : 'Extra'
 };
