@@ -29,7 +29,9 @@ class LiveAuction extends Component {
         Axios.get(Constants.BASE_URL + '/liveAuctionInfo',getHeaderObject()).then(
             (res)=>{
                 if(!_.isEqual(res.data,this.state.currentAuctionInfo)){
-                    const bidAmt = res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5 || 5
+                    const lastBid = res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5 || 5;
+                    const basePrize = res.data.basePrize;
+                    const bidAmt = Math.max(basePrize,lastBid);
                     this.setState({currentAuctionInfo:res.data,bidAmt})
                 }
             },(err)=>{
@@ -139,6 +141,9 @@ class LiveAuction extends Component {
                             </Col>
                             <Col sm={12}>
                                 {`Team : ${currentPlayer.team}`}
+                            </Col>
+                            <Col sm={12}>
+                                {`Base Prize : ${currentPlayer.basePrize}`}
                             </Col>
                             {/* <Col sm={12}>
                                 {`Grade : ${currentPlayer.grade}`}

@@ -124,32 +124,36 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
     }
     var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
-        
-        if(livePlayer.bids.length==0 || livePlayer.bids[0].bidAmt<bidAmt) {
-            
-            if(points[bidBy]>=bidAmt){
-                
-                if(getPlayersOfUser(bidBy).length<20){
-                    livePlayer.bids.unshift({
-                        bidBy:bidBy,
-                        bidAmt:bidAmt
-                    });
-                    if(timerEnabled){
-                        startSellingTimer(playerId)
-                    }
-                    return({
-                        success:true,
-                        body : 'Bid Placed Successfully'
-                    })
+
+        if(livePlayer.basePrize<=bidAmt){
+                if(livePlayer.bids.length==0 || livePlayer.bids[0].bidAmt<bidAmt) {
                     
+                    if(points[bidBy]>=bidAmt){
+                        
+                        if(getPlayersOfUser(bidBy).length<20){
+                            livePlayer.bids.unshift({
+                                bidBy:bidBy,
+                                bidAmt:bidAmt
+                            });
+                            if(timerEnabled){
+                                startSellingTimer(playerId)
+                            }
+                            return({
+                                success:true,
+                                body : 'Bid Placed Successfully'
+                            })
+                            
+                        }
+                        body = 'you can not have more than 20 players';
+                        return {success:false,body}
+                    }
+                    body = 'you dont have enough points'
+                    return {success:false,body}
                 }
-                body = 'you can not have more than 20 players';
+                body = 'bid not greater than previous bid'
                 return {success:false,body}
-            }
-            body = 'you dont have enough points'
-            return {success:false,body}
         }
-        body = 'bid not greater than previous bid'
+        body = 'bid not greater than base prize';
         return {success:false,body}
     }
     body = 'player is not same or already sold'
@@ -175,7 +179,8 @@ function markAsSold({playerId}){
             }
             return {success:true,message};
         }
-        else{
+        else
+        {
             livePlayer.soldTo = 'unSold';
             unsoldPlayer.push(livePlayer);
             const message = `Player with id ${playerId} remained unsold`;
@@ -242,8 +247,18 @@ function getNextPlayer() {
 
     }
     var len =remainingPlayers.length;
-    ind = Math.floor(Math.random()*len);
-    return remainingPlayers.splice(ind,1)[0];
+    if(len>0){
+        ind = Math.floor(Math.random()*len);
+        return remainingPlayers.splice(ind,1)[0];
+    }
+    if(unsoldPlayer.length>0){
+        len = unsoldPlayer.length;
+        const ind = Math.floor(Math.random()*len);
+        const player = unsoldPlayer.splice(ind,1)[0];
+        player.soldTo = null;
+        player.basePrize=0;
+        return player;
+    }
 
     // if(AGradePlayers.length>0){
     //     len = AGradePlayers.length;
@@ -265,13 +280,7 @@ function getNextPlayer() {
     //     const ind = Math.floor(Math.random()*len);
     //     return DGradePlayers.splice(ind,1)[0];
     // }
-    // if(unsoldPlayer.length>0){
-    //     len = unsoldPlayer.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     const player = unsoldPlayer.splice(ind,1)[0];
-    //     player.soldTo = null;
-    //     return player;
-    // }
+    
 }
 
 function resetAuction(){
