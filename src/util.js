@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken';
 
-export const USER_KEY = 'WCAuction2User';
-export const TOKEN_KEY = 'WCAuction2Token';
+export const USER_KEY = 'WCAuction3User';
+export const TOKEN_KEY = 'WCAuction3Token';
 
 
 export function getJwtToken(){

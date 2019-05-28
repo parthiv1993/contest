@@ -14,6 +14,7 @@ module.exports={
     Varun:2,
     Sharad:2,
     Keyur:2,
+    Sandy:2,
     Jay:2,
     Extra:2,
     readOnly : 1

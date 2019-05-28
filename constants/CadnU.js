@@ -40,13 +40,13 @@ var remainingPlayers = copyArray(Allplayers);
 var unsoldPlayer=[];
 
 var soldPlayer = [];
-var cheatPlayerId = null;
+var specialPlayerId = null;
 
 var livePlayer = getNextPlayer();
 
 var timerEnabled = true;
 var timeOutToMarkPlayerSoldAfterBid = null;
-var timeWaitToSold = 30000; //30 sec
+var timeWaitToSold = 25000; //30 sec
 var timeOutToGetNextPlayerAfterSold = null;
 var timeWaitToBringNextPlayer = 10000; // 15 sec
 var timeLeftInSoldTimer = null;
@@ -231,14 +231,14 @@ function bringNextPlayer() {
 
 function getNextPlayer() {
     var ind;
-    if(cheatPlayerId){
+    if(specialPlayerId){
         ind = _.findIndex(remainingPlayers,function(player){
             if(player.playerId==1){
             }
-            return player.playerId == cheatPlayerId;
+            return player.playerId == specialPlayerId;
         });
         if(ind!=-1){
-            cheatPlayerId = null;
+            specialPlayerId = null;
             var player =  remainingPlayers.splice(ind,1)[0];
             console.log('Nxt player thanks to c is ');
             console.log(player);

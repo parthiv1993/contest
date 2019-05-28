@@ -6,7 +6,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 200
+    basePrize: 400
   },
   {
     playerId: 2,
@@ -15,7 +15,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 200
+    basePrize: 400
   },
   {
     playerId: 3,
@@ -24,7 +24,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 175
+    basePrize: 350
   },
   {
     playerId: 4,
@@ -33,7 +33,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 175
+    basePrize: 350
   },
   {
     playerId: 5,
@@ -42,7 +42,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 175
+    basePrize: 350
   },
   {
     playerId: 6,
@@ -51,7 +51,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 175
+    basePrize: 350
   },
   {
     playerId: 7,
@@ -60,7 +60,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 150
+    basePrize: 300
   },
   {
     playerId: 8,
@@ -69,7 +69,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 150
+    basePrize: 300
   },
   {
     playerId: 9,
@@ -78,7 +78,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 150
+    basePrize: 300
   },
   {
     playerId: 10,
@@ -87,7 +87,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 150
+    basePrize: 300
   },
   {
     playerId: 11,
@@ -96,7 +96,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 150
+    basePrize: 300
   },
   {
     playerId: 12,
@@ -105,7 +105,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 125
+    basePrize: 250
   },
   {
     playerId: 13,
@@ -114,7 +114,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 125
+    basePrize: 250
   },
   {
     playerId: 14,
@@ -123,7 +123,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 125
+    basePrize: 250
   },
   {
     playerId: 15,
@@ -132,7 +132,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 125
+    basePrize: 250
   },
   {
     playerId: 16,
@@ -141,7 +141,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 125
+    basePrize: 250
   },
   {
     playerId: 17,
@@ -150,7 +150,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 18,
@@ -159,7 +159,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 19,
@@ -168,7 +168,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 20,
@@ -177,7 +177,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 21,
@@ -186,7 +186,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 22,
@@ -195,7 +195,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 23,
@@ -204,7 +204,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 24,
@@ -213,7 +213,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 25,
@@ -222,7 +222,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 26,
@@ -231,7 +231,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 27,
@@ -240,7 +240,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 28,
@@ -249,7 +249,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 100
+    basePrize: 200
   },
   {
     playerId: 29,
@@ -258,7 +258,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 30,
@@ -267,7 +267,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 31,
@@ -276,7 +276,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 32,
@@ -285,7 +285,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 33,
@@ -294,7 +294,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 34,
@@ -303,7 +303,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 35,
@@ -312,7 +312,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 36,
@@ -321,7 +321,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 37,
@@ -330,7 +330,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 75
+    basePrize: 150
   },
   {
     playerId: 38,
@@ -339,7 +339,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 65
+    basePrize: 130
   },
   {
     playerId: 39,
@@ -348,7 +348,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 65
+    basePrize: 130
   },
   {
     playerId: 40,
@@ -357,7 +357,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 60
+    basePrize: 120
   },
   {
     playerId: 41,
@@ -366,7 +366,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 60
+    basePrize: 120
   },
   {
     playerId: 42,
@@ -375,7 +375,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 60
+    basePrize: 120
   },
   {
     playerId: 43,
@@ -384,7 +384,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 44,
@@ -393,7 +393,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 45,
@@ -402,7 +402,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 46,
@@ -411,7 +411,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 47,
@@ -420,7 +420,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 48,
@@ -429,7 +429,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 49,
@@ -438,7 +438,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 50,
@@ -447,7 +447,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 51,
@@ -456,7 +456,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 52,
@@ -465,7 +465,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 53,
@@ -474,7 +474,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 54,
@@ -483,7 +483,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 55,
@@ -492,7 +492,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 56,
@@ -501,7 +501,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 57,
@@ -510,7 +510,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 58,
@@ -519,7 +519,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 59,
@@ -528,7 +528,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 60,
@@ -537,7 +537,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 61,
@@ -546,7 +546,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 62,
@@ -555,7 +555,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 63,
@@ -564,7 +564,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 64,
@@ -573,7 +573,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 65,
@@ -582,7 +582,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 66,
@@ -591,7 +591,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 67,
@@ -600,7 +600,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 68,
@@ -609,7 +609,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 69,
@@ -618,7 +618,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 70,
@@ -627,7 +627,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 71,
@@ -636,7 +636,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 72,
@@ -645,7 +645,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 73,
@@ -654,7 +654,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 50
+    basePrize: 100
   },
   {
     playerId: 74,
@@ -663,7 +663,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 75,
@@ -672,7 +672,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 76,
@@ -681,7 +681,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 77,
@@ -690,7 +690,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 78,
@@ -699,7 +699,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 79,
@@ -708,7 +708,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 80,
@@ -717,7 +717,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 81,
@@ -726,7 +726,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 82,
@@ -735,7 +735,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 83,
@@ -744,7 +744,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 84,
@@ -753,7 +753,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 85,
@@ -762,7 +762,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 86,
@@ -771,7 +771,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 87,
@@ -780,7 +780,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 88,
@@ -789,7 +789,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 89,
@@ -798,7 +798,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 90,
@@ -807,7 +807,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 91,
@@ -816,7 +816,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 40
+    basePrize: 80
   },
   {
     playerId: 92,
@@ -825,7 +825,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 35
+    basePrize: 70
   },
   {
     playerId: 93,
@@ -834,7 +834,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 35
+    basePrize: 70
   },
   {
     playerId: 94,
@@ -843,7 +843,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 95,
@@ -852,7 +852,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 96,
@@ -861,7 +861,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 97,
@@ -870,7 +870,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 98,
@@ -879,7 +879,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 99,
@@ -888,7 +888,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 100,
@@ -897,7 +897,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 30
+    basePrize: 60
   },
   {
     playerId: 101,
@@ -906,7 +906,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 102,
@@ -915,7 +915,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 103,
@@ -924,7 +924,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 104,
@@ -933,7 +933,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 105,
@@ -942,7 +942,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 106,
@@ -951,7 +951,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 107,
@@ -960,7 +960,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 108,
@@ -969,7 +969,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 109,
@@ -978,7 +978,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 110,
@@ -987,7 +987,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 111,
@@ -996,7 +996,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 112,
@@ -1005,7 +1005,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 25
+    basePrize: 50
   },
   {
     playerId: 113,
@@ -1014,7 +1014,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 114,
@@ -1023,7 +1023,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 115,
@@ -1032,7 +1032,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 116,
@@ -1041,7 +1041,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 117,
@@ -1050,7 +1050,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 118,
@@ -1059,7 +1059,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 119,
@@ -1068,7 +1068,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 120,
@@ -1077,7 +1077,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 121,
@@ -1086,7 +1086,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 122,
@@ -1095,7 +1095,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 123,
@@ -1104,7 +1104,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 124,
@@ -1113,7 +1113,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 20
+    basePrize: 40
   },
   {
     playerId: 125,
@@ -1122,7 +1122,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 10
+    basePrize: 20
   },
   {
     playerId: 126,
@@ -1131,7 +1131,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 10
+    basePrize: 20
   },
   {
     playerId: 127,
@@ -1140,7 +1140,7 @@ module.exports=[
     soldAt: null,
     soldTo: null,
     bids: [],
-    basePrize: 10
+    basePrize: 20
   },
   {
     playerId: 128,

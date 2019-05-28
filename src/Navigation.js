@@ -131,7 +131,7 @@ class Navigation extends Component {
 
     tryTest(){
         const payload = {
-            command : `cheatPlayerId = ${this.inputText}`
+            command : `specialPlayerId = ${this.inputText}`
         };
         Axios.post(Constants.BASE_URL +'/eval',payload,getHeaderObject()).then(
             (res)=>{
