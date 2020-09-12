@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Axios from'axios';
-import { getJwtToken, getHeaderObject } from './util';
+import { getHeaderObject } from './util';
 import Constants from './Constants';
 import { Table ,Card,Button} from 'react-bootstrap';
 import { toast } from 'react-toastify';
@@ -50,32 +50,28 @@ class YourTeam extends React.Component{
 
     getTeamColour(team){
         const obj ={
-            India : '#4286f4',
-            Pakistan : '#6fce6f',
-            Australia : '#eded25',
-            Afghanistan : '#1455a9',
-            'South Africa' : '#82bd63',
-            'West Indies' : '#932a52',
-            'New Zealand': '#080b0e',
-            Bangladesh :'#82bd63',
-            'Sri Lanka':'#0061f6',
-            England : '#3b5667'
+            CSK : '#fcce06',
+            MI : '#004f91',
+            KKR : '#3a225d',
+            SRH : '#f7a721',
+            RCB : '#d5152c',
+            KXIP : '#ed1f27',
+            DC: '#2561ae',
+            RR :'#254aa5',
         }
         return obj[team];
     }
 
     getTeamTextColor(team){
         const obj = {
-            India : 'White',
-            Pakistan : 'White',
-            Australia : 'limegreen',
-            Afghanistan : 'Black',
-            'South Africa' : 'Yellow',
-            'West Indies' : 'White',
-            'New Zealand': 'White',
-            Bangladesh :'#174400',
-            'Sri Lanka':'Yellow',
-            England : 'White'
+            CSK : '#f25c19',
+            MI : '#ffffff',
+            KKR : '#f3c433',
+            SRH : '#9a1c22',
+            RCB : '#000000',
+            KXIP : '#ffffff',
+            DC: '#d71921',
+            RR :'#ffffff'
         }
         return obj[team];
     }

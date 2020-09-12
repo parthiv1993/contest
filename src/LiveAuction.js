@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Constants from './Constants';
 import { Button, Row, Col, Table ,Card} from 'react-bootstrap';
 import Axios from 'axios';
-import { getJwtToken, getHeaderObject, USER_KEY } from './util';
+import { getHeaderObject, USER_KEY } from './util';
 import _ from 'lodash';
 import { toast } from 'react-toastify';
 
@@ -29,7 +29,7 @@ class LiveAuction extends Component {
         Axios.get(Constants.BASE_URL + '/liveAuctionInfo',getHeaderObject()).then(
             (res)=>{
                 if(!_.isEqual(res.data,this.state.currentAuctionInfo)){
-                    const lastBid = res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5 || 5;
+                    const lastBid = (res.data.bids && res.data.bids[0] && res.data.bids[0].bidAmt+5) || 5;
                     const basePrize = res.data.basePrize;
                     const bidAmt = Math.max(basePrize,lastBid);
                     this.setState({currentAuctionInfo:res.data,bidAmt})

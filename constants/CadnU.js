@@ -312,6 +312,21 @@ function getAllPlayers(){
 }
 
 function getRemainingPlayersCount() {
+    var xmap={}
+
+    copyArray(remainingPlayers).map(
+        (player)=>{
+            var team = player.team;
+            if(xmap[team]){
+                xmap[team] = xmap[team] + 1
+            }else{
+                xmap[team] = 1
+            }
+        }
+    )
+
+    
+
     var Australia = copyArray(remainingPlayers).filter((player)=> player.team=='Australia');
     var India = copyArray(remainingPlayers).filter((player)=> player.team=='India');
     var Pakistan = copyArray(remainingPlayers).filter((player)=> player.team=='Pakistan');
@@ -331,16 +346,7 @@ function getRemainingPlayersCount() {
 
     return {
         Sold_Players,
-        Afghanistan : Afghanistan.length,
-        Australia : Australia.length,
-        Bangladesh : Bangladesh.length,
-        England : England.length,
-        India : India.length,
-        NewZealand : NewZealand.length,
-        Pakistan : Pakistan.length,
-        SouthAfrica : SouthAfrica.length,
-        SriLanka : SriLanka.length,
-        WestIndies : WestIndies.length,
+        ...xmap,
         Unsold,
         Total_Remaining
     }

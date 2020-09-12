@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Axios from'axios';
-import { getJwtToken, getHeaderObject ,USER_KEY} from './util';
+import { getHeaderObject ,USER_KEY} from './util';
 import Constants from './Constants';
 import { Table, Card, Button } from 'react-bootstrap';
 
@@ -44,7 +44,6 @@ class PlayerRemaining extends React.Component{
 
     render(){
         const count = this.state.count;
-        const user = localStorage.getItem([USER_KEY]);
         if(count){
             return(
                 <Card>
