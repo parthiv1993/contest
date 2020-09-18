@@ -5,10 +5,9 @@ module.exports= {
     vbafna : 'Vishal',
     baba : 'Prakash',
     mantri : 'Mantri',
-    vihera : 'Vohera',
-    luck : 'Lucky',
     jimit : 'Jimit',
     etra : 'Extra',
-    alpha : 'A',
-    beta : 'B',
+    ae : 'Apple',
+    ba : 'Banana',
+    ze : 'Zeta'
 };
