@@ -226,7 +226,7 @@ module.exports=[
   },
   {
     "playerId": 27,
-    "name": "HARRY GURNEY",
+    "name": "ALI KHAN",
     "team": "KKR",
     "soldAt": null,
     "soldTo": null,
@@ -937,7 +937,7 @@ module.exports=[
   },
   {
     "playerId": 106,
-    "name": "KANE RICHARDSON",
+    "name": "ADAM ZAMPA",
     "team": "RCB",
     "soldAt": null,
     "soldTo": null,
@@ -1009,7 +1009,7 @@ module.exports=[
   },
   {
     "playerId": 114,
-    "name": "PAVAN DESHPANDE PARTHIV PATEL",
+    "name": "PAVAN DESHPANDE",
     "team": "RCB",
     "soldAt": null,
     "soldTo": null,
@@ -1414,7 +1414,7 @@ module.exports=[
   },
   {
     "playerId": 159,
-    "name": "CHRIS WOAKES",
+    "name": "NORTJE",
     "team": "DC",
     "soldAt": null,
     "soldTo": null,
@@ -1686,6 +1686,15 @@ module.exports=[
     "playerId": 189,
     "name": "DAVID MALAN(NS)",
     "team":"NA",
+    "soldAt": null,
+    "soldTo": null,
+    "bids": [],
+    "basePrize": 0
+  },
+   {
+    "playerId": 190,
+    "name": "PARTHIV PATEL",
+    "team": "RCB",
     "soldAt": null,
     "soldTo": null,
     "bids": [],
