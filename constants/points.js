@@ -7,7 +7,10 @@ module.exports={
     Vohera : 1000,
     Lucky : 1000,
     Jimit: 1000,
+    Tousif:1000,
+    Sandy:1000,
+    Apple : 1000,
+    Banana:1000,
     Extra : 1000,
-    A :1000,
-    B : 1000,
+    Zeta :1000,
 }

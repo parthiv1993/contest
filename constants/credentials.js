@@ -2,13 +2,14 @@ module.exports= {
 
     master :'Parthiv',
     nbafna: 'Nikhil',
-    vbafna : 'Vishal',
+    vbfna : 'Vishal',
     baba : 'Prakash',
     mantri : 'Mantri',
-    vihera : 'Vohera',
-    luck : 'Lucky',
     jimit : 'Jimit',
+    tousf : 'Tousif',
+    sand : 'Sandy',
     etra : 'Extra',
-    alpha : 'A',
-    beta : 'B',
+    ae : 'Apple',
+    ba : 'Banana',
+    ze : 'Zeta'
 };
