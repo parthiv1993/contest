@@ -10,7 +10,7 @@
     "express": "^4.16.4",
     "immutable": "^4.0.0-rc.12",
     "jsonwebtoken": "^8.5.0",
-    "jspdf": "^1.5.3",
+    "jspdf": "^2.3.1",
     "jspdf-autotable": "^3.0.13",
     "lodash": "^4.17.11",
     "react": "^16.8.4",
