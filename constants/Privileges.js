@@ -17,5 +17,8 @@ module.exports={
     Sandy:2,
     Jay:2,
     Extra:2,
+    Jimit:2,
+    A:2,
+    B:2,
     readOnly : 1
 }

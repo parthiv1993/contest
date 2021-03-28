@@ -13,7 +13,7 @@ var points=Object.assign({},initialPoints);
 
 var hasAuctionStarted = false;
 
-const PRIVATE_KEY = 'PRIVATE2';
+const PRIVATE_KEY = 'IPL-2021';
 
 function copyArray(o) {
     var output, v, key;
@@ -46,9 +46,9 @@ var livePlayer = getNextPlayer();
 
 var timerEnabled = true;
 var timeOutToMarkPlayerSoldAfterBid = null;
-var timeWaitToSold = 25000; //30 sec
+var timeWaitToSold = 25000; //25 sec
 var timeOutToGetNextPlayerAfterSold = null;
-var timeWaitToBringNextPlayer = 10000; // 15 sec
+var timeWaitToBringNextPlayer = 10000; // 10 sec
 var timeLeftInSoldTimer = null;
 var intervalToDecreaseSoldTimer = null;
 
@@ -244,7 +244,6 @@ function getNextPlayer() {
             console.log(player);
             return player;
         }
-
     }
     var len =remainingPlayers.length;
     if(len>0){
@@ -324,20 +323,6 @@ function getRemainingPlayersCount() {
             }
         }
     )
-
-    
-
-    var Australia = copyArray(remainingPlayers).filter((player)=> player.team=='Australia');
-    var India = copyArray(remainingPlayers).filter((player)=> player.team=='India');
-    var Pakistan = copyArray(remainingPlayers).filter((player)=> player.team=='Pakistan');
-    var England = copyArray(remainingPlayers).filter((player)=> player.team=='England');
-    var Afghanistan = copyArray(remainingPlayers).filter((player)=> player.team=='Afghanistan');
-    var Bangladesh = copyArray(remainingPlayers).filter((player)=> player.team=='Bangladesh');
-    var NewZealand = copyArray(remainingPlayers).filter((player)=> player.team=='New Zealand');
-    var SouthAfrica = copyArray(remainingPlayers).filter((player)=> player.team=='South Africa');
-    var SriLanka = copyArray(remainingPlayers).filter((player)=> player.team=='Sri Lanka');
-    var WestIndies = copyArray(remainingPlayers).filter((player)=> player.team=='West Indies');
-
 
 
     var Unsold = unsoldPlayer.length;
