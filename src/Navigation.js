@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Navbar,Nav,Form,FormControl,Button, Dropdown} from 'react-bootstrap';
 import Axios from 'axios';
 import Constants from './Constants';
-import { getJwtToken, getHeaderObject, USER_KEY } from './util';
+import { getJwtToken, getHeaderObject, USER_KEY, getPrivilage } from './util';
 import { toast } from 'react-toastify';
 import './navigation.css'
 
@@ -145,6 +145,7 @@ class Navigation extends Component {
 
     render() {
         const userName = localStorage.getItem([USER_KEY]) || 'User';
+        const privilage = getPrivilage()
 
         const originalNavBar = <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#home">{`Hi ${userName}`}</Navbar.Brand>
@@ -154,7 +155,7 @@ class Navigation extends Component {
 
         const additionalOptions = <Navbar bg="dark" variant="dark">
                 {
-                    (userName=='Parthiv' || userName=='Nikhil') &&
+                    ( privilage>=3) &&
                     <ButtonWithWarning
                             warning="You are about to restart the auction. Are you Sure?"
                             handler={this.startAuctionHandler.bind(this)}
@@ -163,7 +164,7 @@ class Navigation extends Component {
                 }
                 &nbsp;
                 {
-                    (userName=='Parthiv' || userName=='Nikhil') &&
+                    ( privilage>=3) &&
                     <ButtonWithWarning
                             warning="You are about to toggle the timer. Are you Sure?"
                             handler={this.timerHandler.bind(this)}
@@ -172,12 +173,12 @@ class Navigation extends Component {
                 }
                 &nbsp;
                 {
-                    (userName=='Parthiv') &&
+                    ( privilage>3) &&
                     <input onChange={(e)=>{this.inputText = parseInt(e.target.value)}}></input>
                 }
                 &nbsp;
                 {
-                     (userName=='Parthiv') &&
+                     ( privilage>3) &&
                      <ButtonWithWarning
                             warning="You are Change Timer for marking player sold. Are you Sure?"
                             handler={this.changeTimerWaitForSold.bind(this)}
@@ -186,7 +187,7 @@ class Navigation extends Component {
                 }
                 &nbsp;
                 {
-                     (userName=='Parthiv') &&
+                     ( privilage>3) &&
                      <ButtonWithWarning
                             warning="You are Change Timer for getiing next player. Are you Sure?"
                             handler={this.changeTimerWaitForNextPlayer.bind(this)}
@@ -195,7 +196,7 @@ class Navigation extends Component {
                 }
                 &nbsp;
                 {
-                     (userName=='Parthiv') &&
+                     ( privilage>3) &&
                      <ButtonWithWarning
                             warning="You are about to get status. Are you Sure?"
                             handler={this.getStatus.bind(this)}
@@ -204,7 +205,7 @@ class Navigation extends Component {
                 }
                 &nbsp;
                 {
-                     (userName=='Parthiv') &&
+                     ( privilage>3) &&
                      <Button variant="outline-info" onClick={()=>{
                         //eslint-disable-next-line
                         if(!confirm("You are about to get test. Are you Sure?")){

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Constants from './Constants';
 import { Button, Row, Col, Table ,Card} from 'react-bootstrap';
 import Axios from 'axios';
-import { getHeaderObject, USER_KEY } from './util';
+import { getHeaderObject, getPrivilage, USER_KEY } from './util';
 import _ from 'lodash';
 import { toast } from 'react-toastify';
 
@@ -121,6 +121,7 @@ class LiveAuction extends Component {
 
     render() {
         const userName = localStorage.getItem([USER_KEY]) || 'User';
+        const privilage = getPrivilage()
         const currentPlayer = this.state.currentAuctionInfo;
         const bidsPresent = currentPlayer && currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
         const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';
@@ -176,7 +177,7 @@ class LiveAuction extends Component {
                                     {userName != 'readOnly' && <Button size='sm' onClick={this.bid.bind(this)}>Bid</Button>}
                                 </Col>
                             }
-                            {!currentPlayer.soldTo && (userName === 'Parthiv' || userName ==='Nikhil') && 
+                            {!currentPlayer.soldTo && (privilage>=3) && 
                                     <Col sm={12}>
                                         <Button size='sm' variant="danger" 
                                             onClick={this.markPlayerSoldHandler.bind(this)}>{soldButtonName}
@@ -185,7 +186,7 @@ class LiveAuction extends Component {
                             }
                             
                             {
-                                currentPlayer.soldTo && (userName === 'Parthiv' || userName ==='Nikhil') && 
+                                currentPlayer.soldTo && (privilage>=3) && 
                                     <Col sm={12}>
                                         <Button size='sm' variant="info" 
                                             onClick={this.bringNextPlayerHandler.bind(this)}>Get Next Player

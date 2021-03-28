@@ -1,13 +1,10 @@
 module.exports={
-    Parthiv : 1000,
-    Nikhil : 1000,
-    Vishal : 1000,
-    Prakash : 1000,
-    Mantri : 1000,
-    Vohera : 1000,
-    Lucky : 1000,
-    Jimit: 1000,
-    Extra : 1000,
-    A :1000,
-    B : 1000,
+    Hyena : 1000,
+    Jaguar : 1000,
+    Lion : 1000,
+    Tiger : 1000,
+    Wolf : 1000,
+    Leapord : 1000,
+    Cheetah : 1000,
+    Panther: 1000
 }

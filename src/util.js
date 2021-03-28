@@ -1,7 +1,8 @@
 import jwt from 'jsonwebtoken';
 
-export const USER_KEY = 'WCAuction3User';
-export const TOKEN_KEY = 'WCAuction3Token';
+export const USER_KEY = 'IPL2021User';
+export const TOKEN_KEY = 'IPL2021Token';
+export const USER_PRIVILAGE = 'IPL2021Privilage';
 
 
 export function getJwtToken(){
@@ -20,9 +21,11 @@ export function checkForJwt(){
 export function saveJwt(token){
     try {
         const debugged = jwt.decode(token);
+        console.log(debugged)
         if(debugged){
             localStorage.setItem([TOKEN_KEY],token);
-            localStorage.setItem([USER_KEY],debugged.user)
+            localStorage.setItem([USER_KEY],debugged.user);
+            localStorage.setItem([USER_PRIVILAGE],debugged.privilage);
         }
         
     }
@@ -30,6 +33,17 @@ export function saveJwt(token){
         console.error(e);
     }
     
+}
+
+
+export function getPrivilage(){
+    try{
+        return localStorage.getItem([USER_PRIVILAGE])
+    }
+    catch(e){
+        console.error(e);
+        return 0;
+    }
 }
 
 export function getHeaderObject(){

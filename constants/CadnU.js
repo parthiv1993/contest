@@ -86,11 +86,9 @@ function clearAllTimers(){
 function createJwt(nickName = '') {
     const lowerNickName = nickName.toLowerCase();
     const user = userNames[lowerNickName] ;
+    const privilage = privilege[user];
     if(user){
-        if(user ==='Parthiv'){
-            hasAuctionStarted = true;
-        }
-        var token = jwt.sign({ user: user },PRIVATE_KEY);
+        var token = jwt.sign({ user,privilage},PRIVATE_KEY);
         return token;
     }
     return false;

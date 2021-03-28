@@ -1,14 +1,10 @@
 module.exports= {
-
-    master :'Parthiv',
-    nbafna: 'Nikhil',
-    vbafna : 'Vishal',
-    baba : 'Prakash',
-    mantri : 'Mantri',
-    vihera : 'Vohera',
-    luck : 'Lucky',
-    jimit : 'Jimit',
-    etra : 'Extra',
-    alpha : 'A',
-    beta : 'B',
+    master :'Hyena',
+    jag: 'Jaguar',
+    simba : 'Lion',
+    sher : 'Tiger',
+    kutta : 'Wolf',
+    leapord : 'Leapord',
+    bhaag : 'Cheetah',
+    wakanda : 'Panther',
 };
