@@ -70,7 +70,7 @@ class PointsRemaining extends React.Component{
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {Object.keys(points).map((key,index)=>
+                                    {(Object.keys(points)).sort().map((key,index)=>
                                         <tr key={index }>
                                             <td >
                                                 {key}
