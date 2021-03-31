@@ -15,6 +15,7 @@ router.get('/', function (req, res) {
 router.post('/login', function (req, res) {
     const token = createJwt(req.body.nickName);
     if(token){
+        console.log(`logged in user -> ${req.body.nickName} ---> ${req.ip}`)
         res.send({token});
         return;
     }
