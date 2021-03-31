@@ -9,16 +9,20 @@ import 'react-toastify/dist/ReactToastify.css';
 
 class App extends Component {
 
-  login(nickName){
-    axios.post(constants.BASE_URL+'/login',{nickName}).then((res)=>{
-      saveJwt(res.data.token)
-      this.forceUpdate();
-    },(err)=>{
-        if(err && err.response && err.response.data && err.response.data.message){
-          toast.error(err.response.data.message);
-        }
-      console.log(err.response);
-    })
+  login(nickName,latitude,longitude){
+    if(latitude && longitude){
+      axios.post(constants.BASE_URL+'/login',{nickName,latitude,longitude}).then((res)=>{
+        saveJwt(res.data.token)
+        this.forceUpdate();
+      },(err)=>{
+          if(err && err.response && err.response.data && err.response.data.message){
+            toast.error(err.response.data.message);
+          }
+        console.log(err.response);
+      })
+    } else {
+      toast.error('Location requirements not met')
+    }
   }
 
   render() {

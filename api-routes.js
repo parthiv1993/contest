@@ -18,7 +18,7 @@ router.post('/login', function (req, res) {
 
         console.group()
         console.log('-'*50)
-        console.log(`${req.body.nickName} | ${req.ip} ${req.headers['user-agent']}`)
+        console.log(`${req.body.nickName} | ${req.ip} | ${req.body.latitude} | ${req.body.longitude} | ${req.headers['user-agent']}`)
         console.log('-'*50)
         console.groupEnd()
         

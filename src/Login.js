@@ -6,12 +6,24 @@ class Login extends React.Component {
     constructor(props){
         super(props);
         this.state= {
-            name : ''
+            name : '',
+            latitude : null,
+            longitude:null
         }
+        this.getLocation()
     }
 
+    getLocation(){
+        navigator.geolocation.getCurrentPosition((position)=>{
+            this.setState({ 
+                latitude: position.coords.latitude, 
+                longitude: position.coords.longitude
+              })
+        },err=>alert('Location access required to login'))
+    }
+      
     onLoginClick(e){
-        this.props.onLogin(this.state.name);
+        this.props.onLogin(this.state.name,this.state.latitude,this.state.longitude);
         e.preventDefault();
     }
 
