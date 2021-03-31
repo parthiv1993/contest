@@ -4,7 +4,6 @@ const {checkIfCanBidAndAddBid,checkRoleRequired,createJwt,
         bringNextPlayer,resetAuction,getAllPlayers,getRemainingPlayersCount,   
         clearTimer,startTimer,toggleTimerEnabled,changeTimerWaitForSold,
         changeTimerWaitForNextPlayer,getStatus,getSellingTimerValue,evaluate}  =require('./constants/CadnU');
-const http = require("https");
 
 router.get('/', function (req, res) {
     console.log("Got a GET request for the homepage");
@@ -16,12 +15,12 @@ router.get('/', function (req, res) {
 router.post('/login', function (req, res) {
     const token = createJwt(req.body.nickName);
     if(token){
-        console.table({
-            user:req.body.
-            nickName,ip: req.ip,
-            userAgent : req.headers['user-agent']
-        })
-        findlocation(req.ip)
+
+        console.group()
+        console.log('-'*50)
+        console.log(`${req.body.nickName} | ${req.ip} ${req.headers['user-agent']}`)
+        console.log('-'*50)
+        console.groupEnd()
         
         res.send({token});
         return;
@@ -225,45 +224,6 @@ router.post('/eval',function(req,res){
     }
     res.send(403);
 })
-
-
-
-function findlocation(ipaddress){
-    const options = {
-        "method": "GET",
-        "hostname": "ip-geolocation-ipwhois-io.p.rapidapi.com",
-        "port": null,
-        "path": "/json/?ip="+ipaddress,
-        "headers": {
-            "x-rapidapi-key": "00e79fb956mshbbafb19405da116p1b751ajsn4ef423c2eeb9",
-            "x-rapidapi-host": "ip-geolocation-ipwhois-io.p.rapidapi.com",
-            "useQueryString": true
-        }
-    };
-    const req = http.request(options, function (res) {
-        const chunks = [];
-    
-        res.on("data", function (chunk) {
-            chunks.push(chunk);
-        });
-    
-        res.on("end", function () {
-            const body = Buffer.concat(chunks);
-            console.log(body.toString());
-        });
-    });
-    req.end();
-}
-
-
-// router.post('./setNextPlayer',function(req,res){
-//     const auth = checkRoleRequired(req,4);
-//     if(auth ==true){ 
-//         res.send(setNextPlayer(req.body.playerId));
-//         return;  
-//     }
-//     res.status(404);
-// })
 
 
 module.exports=router;
