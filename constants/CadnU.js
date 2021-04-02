@@ -220,10 +220,15 @@ function bringNextPlayer() {
         return ({success:false,message:'Auction Not started yer'});
     }
     if(livePlayer.soldTo && livePlayer.soldTo.length>0){
+        try{
         livePlayer = getNextPlayer();
         const message = `Player with id ${livePlayer.playerId} is next Player`;
         startSellingTimer(livePlayer.playerId);
         return {success :true,message};
+        }catch(e){
+            console.error(e);
+            return{success:false,message:'Something went wrong'};
+        }
     }
     return {success:false,message:'Please sell the existing player or mark it unsold'};
 }
@@ -231,28 +236,26 @@ function bringNextPlayer() {
 function getNextPlayer() {
 
     const arr = getNextGradeOfPlayers();
-
     if(specialPlayerId){
         const index = _.findIndex(arr,function(player){
             return player.playerId == specialPlayerId
         })
         if(index!=-1){
             specialPlayerId = null;
-            var player =  arr.splice(ind,1)[0];
+            var player =  arr.splice(index,1)[0];
             console.log('Nxt player thanks to c is ');
-            console.log(player);
+            console.log(player.name);
             return player;
         }
     }
-
-    if(arr.length>0){
-        ind = Math.floor(Math.random()*arr.length);
-        const player = arr.splice(ind,1)[0];
+    else if(arr.length>0){
+        const index = Math.floor(Math.random()*arr.length);
+        const player = arr.splice(index,1)[0];
         player.soldTo = null;
         player.basePrize=0;
         return player;
     }
-    return null
+    return {}
 }
 
 function getNextGradeOfPlayers(){

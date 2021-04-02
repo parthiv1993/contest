@@ -107,7 +107,7 @@ class LiveAuction extends Component {
                 if(err && err.response && err.response.data && err.response.data.message){
                     toast.error(err.response.data.message);
                   }
-                console.err(err);
+                console.error(err);
             }
         )
     }
