@@ -10,7 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 class App extends Component {
 
   login(nickName,latitude,longitude){
-    if(latitude && longitude){
+    if ("geolocation" in navigator) {
       axios.post(constants.BASE_URL+'/login',{nickName,latitude,longitude}).then((res)=>{
         saveJwt(res.data.token)
         this.forceUpdate();

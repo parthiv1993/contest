@@ -7,4 +7,5 @@ module.exports= {
     leapord : 'Leapord',
     bhaag : 'Cheetah',
     wakanda : 'Panther',
+    ext : 'ZAlien'
 };

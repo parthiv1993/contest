@@ -6,5 +6,6 @@ module.exports={
     Wolf : 1000,
     Leapord : 1000,
     Cheetah : 1000,
-    Panther: 1000
+    Panther: 1000,
+    ZAlien : 100000
 }

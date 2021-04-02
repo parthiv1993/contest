@@ -30,14 +30,15 @@ function copyArray(o) {
 
 
 var Allplayers  = allPlayerJson;
-var remainingPlayers = copyArray(Allplayers);
+// var remainingPlayers = copyArray(Allplayers);
 
-// var AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
-// var BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
-// var CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
-// var DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+var AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+var BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+var CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+var DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+var EGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='E');
 
-var unsoldPlayer=[];
+var unsoldPlayers=[];
 
 var soldPlayer = [];
 var specialPlayerId = null;
@@ -123,7 +124,7 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
     var body = ''
     if(livePlayer.playerId === playerId && !livePlayer.soldAt){
 
-        if(livePlayer.basePrize<=bidAmt){
+        if(true){ // livePlayer.basePrize<=bidAmt){
                 if(livePlayer.bids.length==0 || livePlayer.bids[0].bidAmt<bidAmt) {
                     
                     if(points[bidBy]>=bidAmt){
@@ -180,7 +181,7 @@ function markAsSold({playerId}){
         else
         {
             livePlayer.soldTo = 'unSold';
-            unsoldPlayer.push(livePlayer);
+            unsoldPlayers.push(livePlayer);
             const message = `Player with id ${playerId} remained unsold`;
             console.log(message);
             if(timerEnabled){
@@ -228,67 +229,53 @@ function bringNextPlayer() {
 }
 
 function getNextPlayer() {
-    var ind;
+
+    const arr = getNextGradeOfPlayers();
+
     if(specialPlayerId){
-        ind = _.findIndex(remainingPlayers,function(player){
-            if(player.playerId==1){
-            }
-            return player.playerId == specialPlayerId;
-        });
-        if(ind!=-1){
+        const index = _.findIndex(arr,function(player){
+            return player.playerId == playerId
+        })
+        if(index!=-1){
             specialPlayerId = null;
-            var player =  remainingPlayers.splice(ind,1)[0];
+            var player =  arr.splice(ind,1)[0];
             console.log('Nxt player thanks to c is ');
             console.log(player);
             return player;
         }
     }
-    var len =remainingPlayers.length;
-    if(len>0){
-        ind = Math.floor(Math.random()*len);
-        return remainingPlayers.splice(ind,1)[0];
-    }
-    if(unsoldPlayer.length>0){
-        len = unsoldPlayer.length;
-        const ind = Math.floor(Math.random()*len);
-        const player = unsoldPlayer.splice(ind,1)[0];
+
+    if(arr.length>0){
+        ind = Math.floor(Math.random()*arr.length);
+        const player = arr.splice(ind,1)[0];
         player.soldTo = null;
         player.basePrize=0;
         return player;
     }
+    return null
+}
 
-    // if(AGradePlayers.length>0){
-    //     len = AGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return AGradePlayers.splice(ind,1)[0];
-    // }
-    // if(BGradePlayers.length>0){
-    //     len = BGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return BGradePlayers.splice(ind,1)[0];
-    // }
-    // if(CGradePlayers.length>0){
-    //     len = CGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return CGradePlayers.splice(ind,1)[0];
-    // }
-    // if(DGradePlayers.length>0){
-    //     len = DGradePlayers.length;
-    //     const ind = Math.floor(Math.random()*len);
-    //     return DGradePlayers.splice(ind,1)[0];
-    // }
-    
+function getNextGradeOfPlayers(){
+    try {
+        return [AGradePlayers,BGradePlayers,CGradePlayers,DGradePlayers,EGradePlayers,unsoldPlayers].find(function(arr){
+            return arr.length>0
+        }) || []
+    }catch(e){
+        console.error(e);
+        return []
+    }
 }
 
 function resetAuction(){
-    remainingPlayers = copyArray(Allplayers);
-    // AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
-    // BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
-    // CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
-    // DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+    // remainingPlayers = copyArray(Allplayers);
+    AGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='A');
+    BGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='B');
+    CGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='C');
+    DGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='D');
+    EGradePlayers = copyArray(Allplayers).filter((player)=> player.grade=='E');
     points = Object.assign({},initialPoints);
     soldPlayer = [];
-    unsoldPlayer = [];
+    unsoldPlayers = [];
     livePlayer = getNextPlayer()
     hasAuctionStarted = true
 }
@@ -296,12 +283,13 @@ function resetAuction(){
 function getAllPlayers(){
     let players =[];
     players = players.concat(soldPlayer);
-    players = players.concat(remainingPlayers);
-    // players = players.concat(AGradePlayers);
-    // players = players.concat(BGradePlayers);
-    // players = players.concat(CGradePlayers);
-    // players = players.concat(DGradePlayers);
-    players = players.concat(unsoldPlayer);
+    // players = players.concat(remainingPlayers);
+    players = players.concat(AGradePlayers);
+    players = players.concat(BGradePlayers);
+    players = players.concat(CGradePlayers);
+    players = players.concat(DGradePlayers);
+    players = players.concat(EGradePlayers);
+    players = players.concat(unsoldPlayers);
     if(livePlayer && livePlayer.playerId){
         players.unshift(livePlayer);
     }
@@ -311,7 +299,7 @@ function getAllPlayers(){
 function getRemainingPlayersCount() {
     var xmap={}
 
-    copyArray(remainingPlayers).map(
+    copyArray([...AGradePlayers,...BGradePlayers,...CGradePlayers,...DGradePlayers,...EGradePlayers]).map(
         (player)=>{
             var team = player.team;
             if(xmap[team]){
@@ -323,7 +311,7 @@ function getRemainingPlayersCount() {
     )
 
 
-    var Unsold = unsoldPlayer.length;
+    var Unsold = unsoldPlayers.length;
     var Sold_Players = soldPlayer.length;
     var Total_Remaining = Allplayers.length-Sold_Players-Unsold;
 

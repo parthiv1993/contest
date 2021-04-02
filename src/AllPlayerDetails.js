@@ -35,10 +35,10 @@ class AllPlayerDetails extends React.Component{
             {key:'srNo',name :'Sr. No'},
             { key: 'playerId', name: 'Player ID', sortable:true,filterable : true},
             { key: 'name', name: 'Player Name' ,sortable:true,filterable : true},
+            { key:'grade',name : 'Grade',sortable:true,filterable : true},
             { key: 'team', name: 'Team' ,sortable:true,filterable :true},
             { key: 'soldTo', name: 'Sold To' ,sortable:true,filterable : true} ,
             { key: 'soldAt', name: 'Price' ,sortable:true} ,
-            {key:'basePrize',name : 'BasePrize'}
         ]
     }
 
@@ -68,15 +68,15 @@ class AllPlayerDetails extends React.Component{
             const doc = new jsPDF();
             const filteredPlayers = this.getRows(this.state.dPlayers, this.state.filters);
             doc.autoTable({
-                head: [['ID','Player Name','Team','Sold At','Sold To','basePrize','\r\n']],
+                head: [['ID','Player Name','grade','Team','Sold At','Sold To','\r\n']],
                 body:filteredPlayers.map(player=>
                     [
                         player.playerId,
                         player.name,
+                        player.grade,
                         player.team,
                         player.soldAt,
-                        player.soldTo,
-                        player.basePrize
+                        player.soldTo
                     ]
                 )
             });
@@ -90,7 +90,7 @@ class AllPlayerDetails extends React.Component{
     downloadAsExcell(){
         try{
             const filteredPlayers = this.getRows(this.state.dPlayers, this.state.filters);
-            var CsvString = "Player Id,Name,Team,Sold At,Sold To,basePrize,Bids\r\n";
+            var CsvString = "Player Id,Name,grade,Team,Sold At,Sold To,Bids\r\n";
             filteredPlayers.forEach(function(RowItem) {
                 for(var key in RowItem){
                     CsvString += JSON.stringify(RowItem[key]).replace(/\,/g,'') + ',';
