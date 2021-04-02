@@ -234,7 +234,7 @@ function getNextPlayer() {
 
     if(specialPlayerId){
         const index = _.findIndex(arr,function(player){
-            return player.playerId == playerId
+            return player.playerId == specialPlayerId
         })
         if(index!=-1){
             specialPlayerId = null;
