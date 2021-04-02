@@ -4,6 +4,7 @@ var initialPoints = require('./points');
 var credentials = require('./credentials');
 var Importprivilege =require('./Privileges')
 var _ = require('lodash');
+var fs = require('fs');
 
 const userNames = credentials;
 
@@ -161,6 +162,7 @@ function checkIfCanBidAndAddBid({bidAmt,bidBy,playerId}){
 
 function markAsSold({playerId}){
     if(!hasAuctionStarted){
+
         return ({success:false,message:'Auction Not started yer'});
     }
     if(livePlayer.playerId == playerId) {
@@ -176,6 +178,8 @@ function markAsSold({playerId}){
             if(timerEnabled){
                 startNextPlayerTimer();
             }
+            updatePointsInFile()
+            updateSoldPlayersInFile()
             return {success:true,message};
         }
         else
@@ -183,13 +187,16 @@ function markAsSold({playerId}){
             livePlayer.soldTo = 'unSold';
             unsoldPlayers.push(livePlayer);
             const message = `Player with id ${playerId} remained unsold`;
+            updateUnsoldPlayersInFile()
             console.log(message);
             if(timerEnabled){
                 startNextPlayerTimer();
             }
+            updatePointsInFile()
             return {success:true,message};
         }
     }
+    updatePointsInFile()
     return ({success:false,message:'player ID not matched'});
 }
 
@@ -380,6 +387,32 @@ function evaluate(command){
     }
     catch(e){
         return(e)
+    }
+}
+function updatePointsInFile(){
+    try{
+    var newValue =JSON.stringify(points);
+    fs.writeFileSync('./points.txt', newValue, 'utf-8');
+
+    console.log('readFileSync complete');
+    }catch(e){
+        console.warn(e)
+    }
+}
+function updateSoldPlayersInFile(){
+    try{
+        fs.writeFileSync('./soldPlayers.txt', JSON.stringify(soldPlayer),'utf-8');
+        console.log('soldPlayers data updated in text file');
+    }catch(e){
+        console.warn(e);
+    }
+}
+function updateUnsoldPlayersInFile(){
+    try{
+        fs.writeFileSync('./unsoldPlayers.txt', JSON.stringify(unsoldPlayers),'utf-8');
+        console.log('unsoldPlayers data updated in text file');
+    }catch(e){
+        console.warn(e);
     }
 }
 

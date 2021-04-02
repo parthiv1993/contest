@@ -15,6 +15,7 @@ class Login extends React.Component {
 
     getLocation(){
         navigator.geolocation.getCurrentPosition((position)=>{
+            console.log('location fetched ',position);
             this.setState({ 
                 latitude: position.coords.latitude, 
                 longitude: position.coords.longitude

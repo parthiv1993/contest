@@ -1,0 +1,1 @@
+[{"playerId":15,"name":"Rashid Khan","team":"SRH","grade":"A","bids":[],"soldTo":"unSold","soldAt":null,"basePrize":0},{"playerId":44,"name":"Bhuvneshwar Kumar","team":"SRH","grade":"A","bids":[],"soldTo":"unSold","soldAt":null,"basePrize":0}]

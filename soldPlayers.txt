@@ -1,0 +1,1 @@
+[{"playerId":12,"name":"Andre Russell","team":"KKR","grade":"A","bids":[{"bidBy":"Hyena","bidAmt":5}],"soldTo":"Hyena","soldAt":5,"basePrize":0}]
