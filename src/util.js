@@ -1,8 +1,8 @@
 import jwt from 'jsonwebtoken';
 
-export const USER_KEY = 'IPL2021User';
-export const TOKEN_KEY = 'IPL2021Token';
-export const USER_PRIVILAGE = 'IPL2021Privilage';
+export const USER_KEY = 'IPL2021UserAuction2';
+export const TOKEN_KEY = 'IPL2021TokenAuction2';
+export const USER_PRIVILAGE = 'IPL2021PrivilageAuction2';
 
 
 export function getJwtToken(){

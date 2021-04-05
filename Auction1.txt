@@ -1,0 +1,7005 @@
+[
+    {
+        "playerId": 2,
+        "name": "AB de Villiers",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 235
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 230
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 225
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 220
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 215
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 210
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 205
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 200
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 195
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 190
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 185
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 180
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 235,
+        "basePrize": 0
+    },
+    {
+        "playerId": 14,
+        "name": "David Warner",
+        "team": "SRH",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 220
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 215
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 210
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 205
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 200
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 195
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 190
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 185
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 180
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 220,
+        "basePrize": 0
+    },
+    {
+        "playerId": 1,
+        "name": "Virat Kohli",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 220
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 215
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 210
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 205
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 200
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 190
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 185
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 180
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 130
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 220,
+        "basePrize": 0
+    },
+    {
+        "playerId": 11,
+        "name": "KL Rahul",
+        "team": "PUNJAB",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 215
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 210
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 195
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 190
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 185
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 180
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 215,
+        "basePrize": 0
+    },
+    {
+        "playerId": 9,
+        "name": "Rishabh Pant",
+        "team": "DC",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 210
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 205
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 200
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 195
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 190
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 185
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 180
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 210,
+        "basePrize": 0
+    },
+    {
+        "playerId": 3,
+        "name": "Glenn Maxwell",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 175
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 170
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 175,
+        "basePrize": 0
+    },
+    {
+        "playerId": 19,
+        "name": "SuryaKumar Yadav",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 165
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 165,
+        "basePrize": 0
+    },
+    {
+        "playerId": 4,
+        "name": "Rohit Sharma",
+        "team": "MI",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 160,
+        "basePrize": 0
+    },
+    {
+        "playerId": 10,
+        "name": "Kagiso Rabada",
+        "team": "DC",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 160
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 160,
+        "basePrize": 0
+    },
+    {
+        "playerId": 8,
+        "name": "Shikhar Dhawan",
+        "team": "DC",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 155
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 155,
+        "basePrize": 0
+    },
+    {
+        "playerId": 12,
+        "name": "Andre Russell",
+        "team": "KKR",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 150,
+        "basePrize": 0
+    },
+    {
+        "playerId": 6,
+        "name": "Jasprit Bumrah",
+        "team": "MI",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 150,
+        "basePrize": 0
+    },
+    {
+        "playerId": 5,
+        "name": "Hardik Pandya",
+        "team": "MI",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 150
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 145
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 150,
+        "basePrize": 0
+    },
+    {
+        "playerId": 13,
+        "name": "Ben Stokes",
+        "team": "RR",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 140,
+        "basePrize": 0
+    },
+    {
+        "playerId": 20,
+        "name": "Quinton de Kock",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 140,
+        "basePrize": 0
+    },
+    {
+        "playerId": 39,
+        "name": "Jos Buttler",
+        "team": "RR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 140
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 135
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 140,
+        "basePrize": 0
+    },
+    {
+        "playerId": 62,
+        "name": "Chris Gayle",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 130
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 125
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 130
+    },
+    {
+        "playerId": 15,
+        "name": "Rashid Khan",
+        "team": "SRH",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 120
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 115
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 120,
+        "basePrize": 0
+    },
+    {
+        "playerId": 44,
+        "name": "Bhuvneshwar Kumar",
+        "team": "SRH",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 110,
+        "basePrize": 0
+    },
+    {
+        "playerId": 49,
+        "name": "Ishan Kishan",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 110
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 110,
+        "basePrize": 0
+    },
+    {
+        "playerId": 38,
+        "name": "Sanju Samson",
+        "team": "RR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 105,
+        "basePrize": 0
+    },
+    {
+        "playerId": 35,
+        "name": "Shubman Gill",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 105
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 105,
+        "basePrize": 0
+    },
+    {
+        "playerId": 7,
+        "name": "Suresh Raina",
+        "team": "CSK",
+        "grade": "A",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 100,
+        "basePrize": 0
+    },
+    {
+        "playerId": 43,
+        "name": "Jonny Bairstow",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 100,
+        "basePrize": 0
+    },
+    {
+        "playerId": 23,
+        "name": "Trent Boult",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 100
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 100,
+        "basePrize": 0
+    },
+    {
+        "playerId": 45,
+        "name": "Devdutt Padikkal",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 95
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 95,
+        "basePrize": 0
+    },
+    {
+        "playerId": 22,
+        "name": "Kieron Pollard",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 90,
+        "basePrize": 0
+    },
+    {
+        "playerId": 26,
+        "name": "Sam Curran",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 90,
+        "basePrize": 0
+    },
+    {
+        "playerId": 31,
+        "name": "Marcus Stoinis",
+        "team": "DC",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 90,
+        "basePrize": 0
+    },
+    {
+        "playerId": 34,
+        "name": "Mayank Agarwal",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 90,
+        "basePrize": 0
+    },
+    {
+        "playerId": 25,
+        "name": "MS Dhoni",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 90
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 90,
+        "basePrize": 0
+    },
+    {
+        "playerId": 85,
+        "name": "T Natarajan",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 85,
+        "basePrize": 0
+    },
+    {
+        "playerId": 66,
+        "name": "Ravi Bishnoi",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 85,
+        "basePrize": 0
+    },
+    {
+        "playerId": 61,
+        "name": "Anrich Nortje",
+        "team": "DC",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 85,
+        "basePrize": 0
+    },
+    {
+        "playerId": 51,
+        "name": "Rahul Chahar",
+        "team": "MI",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 85
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 85
+    },
+    {
+        "playerId": 17,
+        "name": "Yuzvendra Chahal",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 80,
+        "basePrize": 0
+    },
+    {
+        "playerId": 40,
+        "name": "Chris Morris",
+        "team": "RR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 80,
+        "basePrize": 0
+    },
+    {
+        "playerId": 65,
+        "name": "Mohammed Shami",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 80,
+        "basePrize": 0
+    },
+    {
+        "playerId": 57,
+        "name": "Shardul Thakur",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 80
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 80,
+        "basePrize": 0
+    },
+    {
+        "playerId": 24,
+        "name": "Faf du Plessis",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 75,
+        "basePrize": 0
+    },
+    {
+        "playerId": 46,
+        "name": "Washington Sundar",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 75
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 75,
+        "basePrize": 0
+    },
+    {
+        "playerId": 41,
+        "name": "Manish Pandey",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 70,
+        "basePrize": 0
+    },
+    {
+        "playerId": 37,
+        "name": "Pat Cummins",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 70,
+        "basePrize": 0
+    },
+    {
+        "playerId": 27,
+        "name": "Ravindra Jadeja",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 70,
+        "basePrize": 0
+    },
+    {
+        "playerId": 21,
+        "name": "Krunal Pandya",
+        "team": "MI",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 70,
+        "basePrize": 0
+    },
+    {
+        "playerId": 71,
+        "name": "Varun Chakaravarthy",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 70
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 70,
+        "basePrize": 0
+    },
+    {
+        "playerId": 36,
+        "name": "Sunil Narine",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 65,
+        "basePrize": 0
+    },
+    {
+        "playerId": 33,
+        "name": "Nicholas Pooran",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 65,
+        "basePrize": 0
+    },
+    {
+        "playerId": 29,
+        "name": "Prithvi Shaw",
+        "team": "DC",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 65,
+        "basePrize": 0
+    },
+    {
+        "playerId": 58,
+        "name": "Deepak Chahar",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 65
+    },
+    {
+        "playerId": 68,
+        "name": "Eoin Morgan",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 65
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 65,
+        "basePrize": 0
+    },
+    {
+        "playerId": 69,
+        "name": "Nitish Rana",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 60,
+        "basePrize": 0
+    },
+    {
+        "playerId": 60,
+        "name": "Axar Patel",
+        "team": "DC",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 60,
+        "basePrize": 0
+    },
+    {
+        "playerId": 53,
+        "name": "Ambati Rayudu",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 60,
+        "basePrize": 0
+    },
+    {
+        "playerId": 143,
+        "name": "Kedar Jadhav",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 60,
+        "basePrize": 0
+    },
+    {
+        "playerId": 141,
+        "name": "Jason Holder",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 60
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 60,
+        "basePrize": 0
+    },
+    {
+        "playerId": 32,
+        "name": "Ravichandran Ashwin",
+        "team": "DC",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 55,
+        "basePrize": 0
+    },
+    {
+        "playerId": 79,
+        "name": "Rahul Tewatia",
+        "team": "RR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 55
+    },
+    {
+        "playerId": 81,
+        "name": "Shivam Dube",
+        "team": "RR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 55
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 55,
+        "basePrize": 0
+    },
+    {
+        "playerId": 16,
+        "name": "Kyle Jamieson",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 70,
+        "name": "Dinesh Karthik",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 55,
+        "name": "K Gowtham",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 77,
+        "name": "Yashasvi Jaiswal",
+        "team": "RR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 87,
+        "name": "Sandeep Sharma",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 28,
+        "name": "Moeen Ali",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 52,
+        "name": "Ruturaj Gaikwad",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 47,
+        "name": "Navdeep Saini",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 80,
+        "name": "Shreyas Gopal",
+        "team": "RR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 93,
+        "name": "Daniel Christian",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 50
+    },
+    {
+        "playerId": 142,
+        "name": "Abdul Samad",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 50
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 50,
+        "basePrize": 0
+    },
+    {
+        "playerId": 63,
+        "name": "Dawid Malan",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 45,
+        "basePrize": 0
+    },
+    {
+        "playerId": 121,
+        "name": "Arshdeep Singh",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 45
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 45
+    },
+    {
+        "playerId": 30,
+        "name": "Steven Smith",
+        "team": "DC",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 40,
+        "basePrize": 0
+    },
+    {
+        "playerId": 64,
+        "name": "Jhye Richardson",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 40
+    },
+    {
+        "playerId": 67,
+        "name": "Murugan Ashwin",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 40,
+        "basePrize": 0
+    },
+    {
+        "playerId": 75,
+        "name": "Prasidh Krishna",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 40,
+        "basePrize": 0
+    },
+    {
+        "playerId": 126,
+        "name": "Rahul Tripathi",
+        "team": "KKR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 40,
+        "basePrize": 0
+    },
+    {
+        "playerId": 117,
+        "name": "Shahrukh Khan",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 40,
+        "basePrize": 0
+    },
+    {
+        "playerId": 90,
+        "name": "Mohammed Azharuddeen",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 40
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 40
+    },
+    {
+        "playerId": 48,
+        "name": "Mohammed Siraj",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 35,
+        "basePrize": 0
+    },
+    {
+        "playerId": 78,
+        "name": "Robin Uthappa",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 35,
+        "basePrize": 0
+    },
+    {
+        "playerId": 50,
+        "name": "Nathan Coulter Nile",
+        "team": "MI",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 35
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 35,
+        "basePrize": 0
+    },
+    {
+        "playerId": 54,
+        "name": "Dwayne Bravo",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 30,
+        "basePrize": 0
+    },
+    {
+        "playerId": 59,
+        "name": "Shimron Hetmyer",
+        "team": "DC",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 30,
+        "basePrize": 0
+    },
+    {
+        "playerId": 114,
+        "name": "Ishant Sharma",
+        "team": "DC",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 30,
+        "basePrize": 0
+    },
+    {
+        "playerId": 135,
+        "name": "Priyam Garg",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 30
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 30,
+        "basePrize": 0
+    },
+    {
+        "playerId": 42,
+        "name": "Kane Williamson",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 25,
+        "basePrize": 0
+    },
+    {
+        "playerId": 132,
+        "name": "Jaydev Unadkat",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 25,
+        "basePrize": 0
+    },
+    {
+        "playerId": 133,
+        "name": "Kartik Tyagi",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 25
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 25,
+        "basePrize": 0
+    },
+    {
+        "playerId": 127,
+        "name": "Shakib Al Hasan",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 20,
+        "basePrize": 0
+    },
+    {
+        "playerId": 74,
+        "name": "Shivam Mavi",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 20,
+        "basePrize": 0
+    },
+    {
+        "playerId": 136,
+        "name": "Virat Singh",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 20,
+        "basePrize": 0
+    },
+    {
+        "playerId": 106,
+        "name": "Imran Tahir",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 20,
+        "basePrize": 0
+    },
+    {
+        "playerId": 174,
+        "name": "Ishan Porel",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 20
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 20,
+        "basePrize": 0
+    },
+    {
+        "playerId": 73,
+        "name": "Kamlesh Nagarkoti",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 15,
+        "basePrize": 0
+    },
+    {
+        "playerId": 128,
+        "name": "Lockie Ferguson",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 15,
+        "basePrize": 0
+    },
+    {
+        "playerId": 115,
+        "name": "Umesh Yadav",
+        "team": "DC",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 15,
+        "basePrize": 0
+    },
+    {
+        "playerId": 118,
+        "name": "Mandeep Singh",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 15,
+        "basePrize": 0
+    },
+    {
+        "playerId": 108,
+        "name": "Ajinkya Rahane",
+        "team": "DC",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 15
+    },
+    {
+        "playerId": 122,
+        "name": "Riley Meredith",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 15
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 15,
+        "basePrize": 0
+    },
+    {
+        "playerId": 18,
+        "name": "Kane Richardson",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 82,
+        "name": "Jofra Archer",
+        "team": "RR",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 83,
+        "name": "Wriddhiman Saha",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 84,
+        "name": "Vijay Shankar",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 72,
+        "name": "Kuldeep Yadav",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 96,
+        "name": "Chris Lynn",
+        "team": "MI",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 10
+    },
+    {
+        "playerId": 113,
+        "name": "Harshal Patel",
+        "team": "DC",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 112,
+        "name": "Amit Mishra",
+        "team": "DC",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 129,
+        "name": "Manan Vohra",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 99,
+        "name": "Adam Milne",
+        "team": "MI",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 100,
+        "name": "Piyush Chawla",
+        "team": "MI",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 10
+    },
+    {
+        "playerId": 88,
+        "name": "Sachin Baby",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 103,
+        "name": "Narayan Jagadeesan",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Tiger",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Tiger",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 139,
+        "name": "Mohammad Nabi",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 95,
+        "name": "Daniel Sams",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 119,
+        "name": "Deepak Hooda",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 145,
+        "name": "Shahbaz Nadeem",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 105,
+        "name": "Lungi Ngidi",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 109,
+        "name": "Shreyas Iyer",
+        "team": "DC",
+        "grade": "B",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 91,
+        "name": "Shahbaz Ahmed",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 10
+            },
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 10,
+        "basePrize": 0
+    },
+    {
+        "playerId": 86,
+        "name": "Khaleel Ahmed",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [
+            {
+                "bidBy": "Hyena",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Hyena",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 102,
+        "name": "Cheteshwar Pujara",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 125,
+        "name": "Rinku Singh",
+        "team": "KKR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 94,
+        "name": "Adam Zampa",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Lion",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Lion",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 137,
+        "name": "Abhishek Sharma",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Leapord",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Leapord",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 111,
+        "name": "Tom Curran",
+        "team": "DC",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 120,
+        "name": "Moises Henriques",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 146,
+        "name": "Siddharth Kaul",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 116,
+        "name": "Sarfaraz Khan",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 131,
+        "name": "Riyan Parag",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 98,
+        "name": "James Neesham",
+        "team": "MI",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 134,
+        "name": "Andrew Tye",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Panther",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Panther",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 104,
+        "name": "Karn Sharma",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 124,
+        "name": "Karun Nair",
+        "team": "KKR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 140,
+        "name": "Jason Roy",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Jaguar",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Jaguar",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 130,
+        "name": "David Miller",
+        "team": "RR",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 123,
+        "name": "Chris Jordan",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 89,
+        "name": "Finn Allen",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 190,
+        "name": "Akash Singh",
+        "team": "RR",
+        "grade": "E",
+        "bids": [
+            {
+                "bidBy": "Cheetah",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Cheetah",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 180,
+        "name": "Harbhajan Singh",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 188,
+        "name": "Liam Livingstone",
+        "team": "RR",
+        "grade": "E",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 185,
+        "name": "Mustafizur Rahman",
+        "team": "RR",
+        "grade": "E",
+        "bids": [
+            {
+                "bidBy": "Wolf",
+                "bidAmt": 5
+            }
+        ],
+        "soldTo": "Wolf",
+        "soldAt": 5,
+        "basePrize": 0
+    },
+    {
+        "playerId": 172,
+        "name": "Saurabh Kumar",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 183,
+        "name": "Mahipal Lomror",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 173,
+        "name": "Darshan Nalkande",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 155,
+        "name": "Jayant Yadav",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 161,
+        "name": "Ripal Patel",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 101,
+        "name": "Marco Jansen",
+        "team": "MI",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 160,
+        "name": "K. Bhagath Varma",
+        "team": "CSK",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 159,
+        "name": "M Harisankar Reddy",
+        "team": "CSK",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 110,
+        "name": "Sam Billings",
+        "team": "DC",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 170,
+        "name": "Utkarsh Singh",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 150,
+        "name": "KS Bharat",
+        "team": "RCB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 138,
+        "name": "Shreevats Goswami",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 168,
+        "name": "Prabhsimran Singh",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 169,
+        "name": "Jalaj Saxena",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 182,
+        "name": "Anuj Rawat",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 162,
+        "name": "Vishnu Vinod",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 189,
+        "name": "Kuldip Yadav",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 158,
+        "name": "KM Asif",
+        "team": "CSK",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 186,
+        "name": "Chetan Sakariya",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 153,
+        "name": "Arjun Tendulkar",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 148,
+        "name": "Rajat Patidar",
+        "team": "RCB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 184,
+        "name": "Mayank Markande",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 152,
+        "name": "Yudhvir Charak",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 176,
+        "name": "Ben Cutting",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 97,
+        "name": "Aditya Tare",
+        "team": "MI",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 154,
+        "name": "Anukul Roy",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 76,
+        "name": "Sandeep Warrier",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 107,
+        "name": "Josh Hazlewood",
+        "team": "CSK",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 173,
+        "name": "Darshan Nalkande",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 171,
+        "name": "Harpreet Brar",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 177,
+        "name": "Pawan Negi",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 167,
+        "name": "M Siddharth",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 175,
+        "name": "Sheldon Jackson",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 165,
+        "name": "Avesh Khan",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 179,
+        "name": "Harry Gurney",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 164,
+        "name": "Pravin Dubey",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 158,
+        "name": "KM Asif",
+        "team": "CSK",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 191,
+        "name": "J Suchith",
+        "team": "SRH",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 149,
+        "name": "Suyash Prabhudessai",
+        "team": "RCB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 166,
+        "name": "Lukman Meriwala",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 92,
+        "name": "Pavan Deshpande",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 181,
+        "name": "Vaibhav Arora",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 157,
+        "name": "C Hari Nishanth",
+        "team": "CSK",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 163,
+        "name": "Lalit Yadav",
+        "team": "DC",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 151,
+        "name": "Anmolpreet Singh",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 187,
+        "name": "KC Cariappa",
+        "team": "RR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 178,
+        "name": "Venkatesh Iyer",
+        "team": "KKR",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 156,
+        "name": "Mohsin Khan",
+        "team": "MI",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 144,
+        "name": "Basil Thampi",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 147,
+        "name": "Mujeeb ur Rahman",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 56,
+        "name": "Mitchell Santner",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 172,
+        "name": "Saurabh Kumar",
+        "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": "unSold",
+        "soldAt": null,
+        "basePrize": 0
+    }
+]
