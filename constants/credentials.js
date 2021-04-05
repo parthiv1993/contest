@@ -7,5 +7,5 @@ module.exports= {
     sixes : 'Yuvraj',
     wall : 'Dravid',
     fan : 'Irfan',
-    ext : 'ZAlien'
+    ext : 'ZzAlien'
 };

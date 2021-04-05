@@ -7,5 +7,5 @@ module.exports={
     Yuvraj : 1000,
     Dravid : 1000,
     Irfan: 1000,
-    ZAlien : 100000
+    ZzAlien : 100000
 }

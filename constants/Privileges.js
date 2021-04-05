@@ -7,5 +7,5 @@ module.exports={
     Yuvraj : 2,
     Dravid : 2,
     Irfan: 2,
-    ZAlien : 2
+    ZzAlien : 2
 }
