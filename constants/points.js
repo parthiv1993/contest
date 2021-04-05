@@ -1,12 +1,11 @@
 module.exports={
-   
-    Yuvraj : 1000,
-    Dravid : 1000,
-    Irfan: 1000,
+    Yuvraj : 45,
+    Dravid : 0,
+    Irfan: 80,
     ZzAlien : 100000, 
-    Kumble : 1000,
-    Sehwag : 1000,
-    Laxman : 1000,
-    Zaheer : 1000,
-    Ganguly : 1000,
+    Kumble : 30,
+    Sehwag : 110,
+    Laxman : 20,
+    Zaheer : 20,
+    Ganguly : 75,
 }
