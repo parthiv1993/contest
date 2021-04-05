@@ -1052,7 +1052,7 @@ module.exports=[
     {
         "playerId": 113,
         "name": "Harshal Patel",
-        "team": "DC",
+        "team": "RCB",
         "grade": "D",
         "bids": [],
         "soldTo": null,
@@ -1892,6 +1892,16 @@ module.exports=[
         "playerId": 172,
         "name": "Saurabh Kumar",
         "team": "PUNJAB",
+        "grade": "E",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 173,
+        "name": "Saurabh Tiwary",
+        "team": "MI",
         "grade": "E",
         "bids": [],
         "soldTo": null,
