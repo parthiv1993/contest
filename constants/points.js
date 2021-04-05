@@ -1,11 +1,11 @@
 module.exports={
-    Hyena : 1000,
-    Jaguar : 1000,
-    Lion : 1000,
-    Tiger : 1000,
-    Wolf : 1000,
-    Leapord : 1000,
-    Cheetah : 1000,
-    Panther: 1000,
+    Kumble : 1000,
+    Sehwag : 1000,
+    Laxman : 1000,
+    Zaheer : 1000,
+    Ganguly : 1000,
+    Yuvraj : 1000,
+    Dravid : 1000,
+    Irfan: 1000,
     ZAlien : 100000
 }

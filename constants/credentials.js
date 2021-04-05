@@ -1,11 +1,11 @@
 module.exports= {
-    master :'Hyena',
-    jag: 'Jaguar',
-    simba : 'Lion',
-    sher : 'Tiger',
-    kutta : 'Wolf',
-    leapord : 'Leapord',
-    bhaag : 'Cheetah',
-    wakanda : 'Panther',
+    spin :'Kumble',
+    slipcatch: 'Sehwag',
+    '281*' : 'Laxman',
+    inswing : 'Zaheer',
+    shirtoff : 'Ganguly',
+    sixes : 'Yuvraj',
+    wall : 'Dravid',
+    fan : 'Irfan',
     ext : 'ZAlien'
 };
