@@ -1,5 +1,937 @@
 module.exports=[
     {
+        "playerId": 2,
+        "name": "AB de Villiers",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 14,
+        "name": "David Warner",
+        "team": "SRH",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 1,
+        "name": "Virat Kohli",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 11,
+        "name": "KL Rahul",
+        "team": "PUNJAB",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 9,
+        "name": "Rishabh Pant",
+        "team": "DC",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 3,
+        "name": "Glenn Maxwell",
+        "team": "RCB",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 19,
+        "name": "SuryaKumar Yadav",
+        "team": "MI",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 4,
+        "name": "Rohit Sharma",
+        "team": "MI",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 10,
+        "name": "Kagiso Rabada",
+        "team": "DC",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 8,
+        "name": "Shikhar Dhawan",
+        "team": "DC",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 12,
+        "name": "Andre Russell",
+        "team": "KKR",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 6,
+        "name": "Jasprit Bumrah",
+        "team": "MI",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 5,
+        "name": "Hardik Pandya",
+        "team": "MI",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 13,
+        "name": "Ben Stokes",
+        "team": "RR",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 20,
+        "name": "Quinton de Kock",
+        "team": "MI",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 39,
+        "name": "Jos Buttler",
+        "team": "RR",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 62,
+        "name": "Chris Gayle",
+        "team": "PUNJAB",
+        "grade": "A",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 15,
+        "name": "Rashid Khan",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 44,
+        "name": "Bhuvneshwar Kumar",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 49,
+        "name": "Ishan Kishan",
+        "team": "MI",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 38,
+        "name": "Sanju Samson",
+        "team": "RR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 35,
+        "name": "Shubman Gill",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 7,
+        "name": "Suresh Raina",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 43,
+        "name": "Jonny Bairstow",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 23,
+        "name": "Trent Boult",
+        "team": "MI",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 45,
+        "name": "Devdutt Padikkal",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 22,
+        "name": "Kieron Pollard",
+        "team": "MI",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 26,
+        "name": "Sam Curran",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 31,
+        "name": "Marcus Stoinis",
+        "team": "DC",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 34,
+        "name": "Mayank Agarwal",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 25,
+        "name": "MS Dhoni",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 85,
+        "name": "T Natarajan",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 66,
+        "name": "Ravi Bishnoi",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 61,
+        "name": "Anrich Nortje",
+        "team": "DC",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 51,
+        "name": "Rahul Chahar",
+        "team": "MI",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 17,
+        "name": "Yuzvendra Chahal",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 40,
+        "name": "Chris Morris",
+        "team": "RR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 65,
+        "name": "Mohammed Shami",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 57,
+        "name": "Shardul Thakur",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 24,
+        "name": "Faf du Plessis",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 46,
+        "name": "Washington Sundar",
+        "team": "RCB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 41,
+        "name": "Manish Pandey",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 37,
+        "name": "Pat Cummins",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 27,
+        "name": "Ravindra Jadeja",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 21,
+        "name": "Krunal Pandya",
+        "team": "MI",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 71,
+        "name": "Varun Chakaravarthy",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 36,
+        "name": "Sunil Narine",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 33,
+        "name": "Nicholas Pooran",
+        "team": "PUNJAB",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 29,
+        "name": "Prithvi Shaw",
+        "team": "DC",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 58,
+        "name": "Deepak Chahar",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 68,
+        "name": "Eoin Morgan",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 69,
+        "name": "Nitish Rana",
+        "team": "KKR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 60,
+        "name": "Axar Patel",
+        "team": "DC",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 53,
+        "name": "Ambati Rayudu",
+        "team": "CSK",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 143,
+        "name": "Kedar Jadhav",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 141,
+        "name": "Jason Holder",
+        "team": "SRH",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 32,
+        "name": "Ravichandran Ashwin",
+        "team": "DC",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 79,
+        "name": "Rahul Tewatia",
+        "team": "RR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 81,
+        "name": "Shivam Dube",
+        "team": "RR",
+        "grade": "B",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 16,
+        "name": "Kyle Jamieson",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 70,
+        "name": "Dinesh Karthik",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 55,
+        "name": "K Gowtham",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 77,
+        "name": "Yashasvi Jaiswal",
+        "team": "RR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 87,
+        "name": "Sandeep Sharma",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 28,
+        "name": "Moeen Ali",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 52,
+        "name": "Ruturaj Gaikwad",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 47,
+        "name": "Navdeep Saini",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 80,
+        "name": "Shreyas Gopal",
+        "team": "RR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 93,
+        "name": "Daniel Christian",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 142,
+        "name": "Abdul Samad",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 63,
+        "name": "Dawid Malan",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 121,
+        "name": "Arshdeep Singh",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 30,
+        "name": "Steven Smith",
+        "team": "DC",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 64,
+        "name": "Jhye Richardson",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 67,
+        "name": "Murugan Ashwin",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 75,
+        "name": "Prasidh Krishna",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 126,
+        "name": "Rahul Tripathi",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 117,
+        "name": "Shahrukh Khan",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 90,
+        "name": "Mohammed Azharuddeen",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 48,
+        "name": "Mohammed Siraj",
+        "team": "RCB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 78,
+        "name": "Robin Uthappa",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 50,
+        "name": "Nathan Coulter Nile",
+        "team": "MI",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 54,
+        "name": "Dwayne Bravo",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 59,
+        "name": "Shimron Hetmyer",
+        "team": "DC",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 114,
+        "name": "Ishant Sharma",
+        "team": "DC",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 135,
+        "name": "Priyam Garg",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 42,
+        "name": "Kane Williamson",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 132,
+        "name": "Jaydev Unadkat",
+        "team": "RR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 133,
+        "name": "Kartik Tyagi",
+        "team": "RR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 127,
+        "name": "Shakib Al Hasan",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 74,
+        "name": "Shivam Mavi",
+        "team": "KKR",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 136,
+        "name": "Virat Singh",
+        "team": "SRH",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 106,
+        "name": "Imran Tahir",
+        "team": "CSK",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
+        "playerId": 174,
+        "name": "Ishan Porel",
+        "team": "PUNJAB",
+        "grade": "C",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
+    {
         "playerId": 73,
         "name": "Kamlesh Nagarkoti",
         "team": "KKR",
@@ -47,6 +979,16 @@ module.exports=[
         "bids": [],
         "soldTo": null,
         "soldAt": null
+    },
+    {
+        "playerId": 122,
+        "name": "Riley Meredith",
+        "team": "PUNJAB",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
     },
     {
         "playerId": 18,
@@ -98,7 +1040,25 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 96,
+        "name": "Chris Lynn",
+        "team": "MI",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
+    {
+        "playerId": 113,
+        "name": "Harshal Patel",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 112,
         "name": "Amit Mishra",
@@ -129,7 +1089,15 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 100,
+        "name": "Piyush Chawla",
+        "team": "MI",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null
+    },
     {
         "playerId": 88,
         "name": "Sachin Baby",
@@ -220,7 +1188,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 86,
+        "name": "Khaleel Ahmed",
+        "team": "SRH",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 102,
         "name": "Cheteshwar Pujara",
@@ -233,7 +1210,7 @@ module.exports=[
     },
     {
         "playerId": 125,
-        "name": "Gukeerat Singh",
+        "name": "Rinku Singh",
         "team": "KKR",
         "grade": "D",
         "bids": [],
@@ -311,7 +1288,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 98,
+        "name": "James Neesham",
+        "team": "MI",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 134,
         "name": "Andrew Tye",
@@ -332,7 +1318,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 124,
+        "name": "Karun Nair",
+        "team": "KKR",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 140,
         "name": "Jason Roy",
@@ -343,7 +1338,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 130,
+        "name": "David Miller",
+        "team": "RR",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 123,
         "name": "Chris Jordan",
@@ -354,7 +1358,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 89,
+        "name": "Finn Allen",
+        "team": "RCB",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 190,
         "name": "Akash Singh",
@@ -385,7 +1398,16 @@ module.exports=[
         "soldAt": null,
         "basePrize": 0
     },
-
+    {
+        "playerId": 185,
+        "name": "Mustafizur Rahman",
+        "team": "RR",
+        "grade": "D",
+        "bids": [],
+        "soldTo": null,
+        "soldAt": null,
+        "basePrize": 0
+    },
     {
         "playerId": 183,
         "name": "Mahipal Lomror",

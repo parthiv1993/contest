@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Navigation from './Navigation';
-import LiveAuction from './LiveAuction';
+import Navigation from '../components/NavigationsBar';
+import LiveAuction from '../components/LiveAuction';
 import { Row,Col } from 'react-bootstrap';
-import PointsRemaining from './PointsRemaining';
-import YourTeam from './YourTeam';
-import AllPlayerDetails from './AllPlayerDetails';
-import PlayersRemaining from './PlayersRemaining';
+import PointsRemaining from '../components/PointsRemaining';
+import YourTeam from '../components/YourTeam/YourTeam';
+import AllPlayerDetails from '../components/AllPlayerDetails';
+import PlayersRemaining from '../components/PlayersRemaining';
 
 
 

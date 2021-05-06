@@ -10,12 +10,7 @@ export function getJwtToken(){
 }
 
 export function checkForJwt(){
-    if(getJwtToken()){
-        return true;
-    }
-    else{
-        return false;
-    }
+    return getJwtToken() ? true : false
 }
 
 export function saveJwt(token){
@@ -27,7 +22,6 @@ export function saveJwt(token){
             localStorage.setItem([USER_KEY],debugged.user);
             localStorage.setItem([USER_PRIVILAGE],debugged.privilage);
         }
-        
     }
     catch(e){
         console.error(e);
@@ -35,19 +29,12 @@ export function saveJwt(token){
     
 }
 
-
 export function getPrivilage(){
     try{
-        return localStorage.getItem([USER_PRIVILAGE])
+        return Number(localStorage.getItem([USER_PRIVILAGE]))
     }
     catch(e){
         console.error(e);
         return 0;
     }
-}
-
-export function getHeaderObject(){
-    const token = getJwtToken();
-
-    return { 'headers': { 'Authorization': token } }
 }

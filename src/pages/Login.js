@@ -7,24 +7,11 @@ class Login extends React.Component {
         super(props);
         this.state= {
             name : '',
-            latitude : null,
-            longitude:null
         }
-        this.getLocation()
     }
 
-    getLocation(){
-        navigator.geolocation.getCurrentPosition((position)=>{
-            console.log('location fetched ',position);
-            this.setState({ 
-                latitude: position.coords.latitude, 
-                longitude: position.coords.longitude
-              })
-        },err=>alert('Location access required to login'))
-    }
-      
     onLoginClick(e){
-        this.props.onLogin(this.state.name,this.state.latitude,this.state.longitude);
+        this.props.onLogin(this.state.name);
         e.preventDefault();
     }
 
@@ -36,8 +23,6 @@ class Login extends React.Component {
 
     render(){
         return (
-            // <div class="container d-flex h-100">
-            // <div class="row justify-content-center align-self-center">
             <div style={{height:'-webkit-fill-available'}}>
             <Card style={ {
                     margin: 'auto',
@@ -52,7 +37,10 @@ class Login extends React.Component {
                     <Form onSubmit={this.onLoginClick.bind(this)}>
                         <Form.Group controlId="formNickName">
                             <Form.Label>Nick Name</Form.Label>
-                            <Form.Control type="text" placeholder="Enter your given NickName" onChange={this.onInputChange.bind(this)}/>
+                            <Form.Control 
+                                type="text" 
+                                placeholder="Enter your given NickName" 
+                                onChange={this.onInputChange.bind(this)}/>
                         </Form.Group>
                         <Button variant="primary" type="submit">
                             Submit
@@ -64,16 +52,6 @@ class Login extends React.Component {
                 </Card.Footer>
             </Card>
             </div>
-            // </div>
-            // <div style={{margin:'auto'}}>
-            //     <form>
-            //         <label>
-            //             NickName :
-            //         </label>
-            //         <input value={this.state.name} onChange={this.onInputChange.bind(this)}/>
-            //         <button onClick={this.onLoginClick.bind(this)}>Login</button>
-            //     </form>
-            // </div>
         );
     }
 }

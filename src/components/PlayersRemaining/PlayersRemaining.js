@@ -1,8 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import Axios from'axios';
-import { getHeaderObject ,USER_KEY} from './util';
-import Constants from './Constants';
+import Constants from '../../helpers/Constants';
 import { Table, Card, Button } from 'react-bootstrap';
 
 
@@ -10,7 +9,7 @@ class PlayerRemaining extends React.Component{
     constructor(props){
         super(props);
         this.state ={
-            count:null
+            data:null
         }
     }
 
@@ -27,24 +26,36 @@ class PlayerRemaining extends React.Component{
     }
 
     remainingPlayerRequest(){
-        Axios.get(Constants.BASE_URL + '/getRemainingPlayersCount',getHeaderObject()).then(
+        Axios.get(Constants.urls.getRemainingPlayers).then(
             (res)=>{
-                if(!_.isEqual(res.data,this.state.points)){
-                    this.setState({count:res.data})
+                if(!_.isEqual(res.data,this.state.data)){
+                    this.setState({data:res.data})
                 }
-            },(err)=>{
-                console.error(err);
-            }
-        )
+            })
     }
 
     onRefreshHandler(){
         this.remainingPlayerRequest();
     }
 
+
+    getTableHeaderRow(){
+        return  <tr>
+                    <th>Type</th>
+                    <th>Number of Players</th>
+                </tr>
+    }
+
+    getTableRow(type,count){
+        return  <tr key={type }>
+                    <td >{type.replace('_',' ')}</td>
+                    <td>{count}</td>
+                </tr>
+    }
+
     render(){
-        const count = this.state.count;
-        if(count){
+        const data = this.state.data;
+        if(data){
             return(
                 <Card>
                     <Card.Header as="h5">
@@ -54,25 +65,10 @@ class PlayerRemaining extends React.Component{
                     <Card.Body>
                         <Table striped={true} bordered={true} hover={true} >
                                 <thead>
-                                    <tr>
-                                        <th>
-                                            Type
-                                        </th>
-                                        <th>
-                                            Number of Players
-                                        </th>
-                                    </tr>
+                                    {this.getTableHeaderRow()}
                                 </thead>
                                 <tbody>
-                                    {Object.keys(count).map((key,index)=>
-                                        <tr key={index }>
-                                            <td >
-                                                {key.replace('_',' ')}
-                                            </td>
-                                            <td>
-                                                {count[key]}
-                                            </td>
-                                        </tr>)}
+                                    {Object.keys(data).map((type)=>this.getTableRow(type,data[type]))}
                                 </tbody>
                             </Table>
                     </Card.Body>
