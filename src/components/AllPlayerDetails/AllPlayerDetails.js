@@ -139,12 +139,8 @@ const AllPlayers = ()=>{
         filterRows();
     };
 
-
-    if(players&& players.length === 0){
-        return <></>
-    }
-    
-    return <div>
+    const getConfigButtons = ()=>{
+        return <>
         <h2 style={{display:'inline-block'}}>
             All PLayers Data 
         </h2>
@@ -162,6 +158,15 @@ const AllPlayers = ()=>{
             Refresh Data
         </Button>
         &nbsp;
+        </>
+    }
+
+    if(players&& players.length === 0){
+        return <>{getConfigButtons()}</>
+    }
+    
+    return <div>
+        {getConfigButtons()}
         <ReactDataGrid
             columns={columns}
             rowGetter={i => ({

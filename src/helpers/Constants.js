@@ -1,5 +1,5 @@
 
-const BASE_URL = 'http://localhost:8080/api/';
+const BASE_URL = 'http://localhost:8080/api';
 // const BASE_URL = '/api';
 
 const constants = {
@@ -24,7 +24,7 @@ const constants = {
         changeTImerForNextPlayer : BASE_URL +'/changeTimerWaitForNextPlayer',
         evaluation : BASE_URL +'/eval'
     },
-    priviledges:{
+    privileges:{
         INACTIVE_USER:1,
         ACTIVE_USER:2,
         CORDINATOR:3,

@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken';
 
 export const USER_KEY = 'IPL2021UserAuction2';
 export const TOKEN_KEY = 'IPL2021TokenAuction2';
-export const USER_PRIVILAGE = 'IPL2021PrivilageAuction2';
+export const USER_PRIVILEGE = 'IPL2021PrivilegeAuction2';
 
 
 export function getJwtToken(){
@@ -20,7 +20,7 @@ export function saveJwt(token){
         if(debugged){
             localStorage.setItem([TOKEN_KEY],token);
             localStorage.setItem([USER_KEY],debugged.user);
-            localStorage.setItem([USER_PRIVILAGE],debugged.privilage);
+            localStorage.setItem([USER_PRIVILEGE],debugged.privilege);
         }
     }
     catch(e){
@@ -29,9 +29,9 @@ export function saveJwt(token){
     
 }
 
-export function getPrivilage(){
+export function getPrivilege(){
     try{
-        return Number(localStorage.getItem([USER_PRIVILAGE]))
+        return Number(localStorage.getItem([USER_PRIVILEGE]))
     }
     catch(e){
         console.error(e);

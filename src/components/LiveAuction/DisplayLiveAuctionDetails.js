@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import constants from '../../helpers/Constants';
-import { getPrivilage } from '../../helpers/util';
+import { getPrivilege } from '../../helpers/util';
 import { Col ,Button} from 'react-bootstrap';
 
 
@@ -12,7 +12,7 @@ const LiveAuctionDetails = (props)=>{
 
     useEffect(() => {
         setBid(props.minBid)
-    }, [props.minBid])
+    }, [props.minBid,props.player])
 
     const roundOff=(amt)=>{
         const bidAmt = Math.ceil(parseInt(amt.target.value)/5)*5;
@@ -50,7 +50,7 @@ const LiveAuctionDetails = (props)=>{
 
     const addSoldButtonAndGetNextPlayerButton = ()=>{
         const isPlayerSold = Boolean(currentPlayer.soldTo);
-        const isUserCordinatorOrAbove = getPrivilage() >= constants.priviledges.CORDINATOR;
+        const isUserCordinatorOrAbove = getPrivilege() >= constants.privileges.CORDINATOR;
         const bidsPresent = currentPlayer && currentPlayer.bids && currentPlayer.bids.length && currentPlayer.bids.length>0 ? true : false;
         const soldButtonName = bidsPresent ? 'Mark as Sold' : 'Mark as Unsold';
         

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Navbar,Nav,Button} from 'react-bootstrap';
 import Axios from 'axios';
-import {   USER_KEY, getPrivilage } from '../../helpers/util';
+import {   USER_KEY, getPrivilege } from '../../helpers/util';
 import { toast } from 'react-toastify';
 import './Navigation.css'
 import constants from '../../helpers/Constants';
@@ -15,7 +15,7 @@ const ButtonWithWarning= (props)=> <Button
 
 const Navigation =()=> {
     const userName = localStorage.getItem([USER_KEY]) || 'User';
-    const isAdmin = getPrivilage() >= constants.priviledges.ADMIN;
+    const isAdmin = getPrivilege() >= constants.privileges.ADMIN;
     const [isOpened,setIsOpened] = useState(false);
     const [configValue,setConfigValue]=useState(null);
 
@@ -29,7 +29,7 @@ const Navigation =()=> {
     // }
 
     const startAuction = ()=>{
-        Axios.get(constants.urls.startAuction).then(
+        Axios.post(constants.urls.startAuction).then(
             ()=>toast.success('Auction started. Enjoy the auction!!')
         )
     }

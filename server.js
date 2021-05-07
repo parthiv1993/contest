@@ -1,19 +1,33 @@
-const express = require('express');
-const bodyParser = require('body-parser')
-const path = require('path');
-const app = express();
-app.use(express.static(path.join(__dirname, 'build')));
-const apiRoutes =require('./api-routes');
+import express from 'express';
+import bodyParser from 'body-parser';
+import path from 'path';
+import cors from 'cors';
+import indexController from './APIs/controllers/bidController.js';
+import authController from './APIs/controllers/AuthController.js';
+import infoController from './APIs/controllers/InfoController.js';
+import adminController from './APIs/controllers/AdminController.js';
 
-const cors = require('cors');
+const app = express();
+
+const __dirname = path.resolve();
+
+app.use(express.static(path.join(__dirname, 'build')));
+// const apiRoutes =require('./api-routes');
+
+
+// const cors = require('cors');
 
 app.use(cors())
-app.use(bodyParser.urlencoded({
-    extended: true
-}))
-app.use(bodyParser.json())
+app.use(express.urlencoded({
+  extended: true
+}));
+app.use(express.json())
+
+app.use('/api/',adminController);
   
-app.use('/api/',apiRoutes);
+app.use('/api/',indexController);
+app.use('/api/',authController);
+app.use('/api/',infoController);
 app.get('/ping', function (req, res) {
  return res.send('pong');
 });
