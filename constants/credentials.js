@@ -1,5 +1,5 @@
 module.exports= {
-    master :'Hyena',
+    master1 :'Hyena',
     jag: 'Jaguar',
     simba : 'Lion',
     sher : 'Tiger',
